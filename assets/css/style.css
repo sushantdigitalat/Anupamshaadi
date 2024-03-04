@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
 html,
 body {
   margin: 0;
@@ -21,6 +22,18 @@ body a {
 body img {
   max-width: 100%;
 }
+
+.tiro-devanagari marathi-regular {
+	font-family: "Tiro Devanagari Marathi", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .tiro-devanagari marathi-regular-italic {
+	font-family: "Tiro Devanagari Marathi", serif;
+	font-weight: 400;
+	font-style: italic;
+  }
 
 a:hover {
   text-decoration: none;
@@ -63,9 +76,8 @@ ul {
 
 /*-- header --*/
 header {
-  position: absolute;
   width: 100%;
-  padding: 15px 0;
+  padding: 0;
   z-index: 9;
 }
 .right-p li,
@@ -134,7 +146,7 @@ nav ul li {
 
 /* Styling the links */
 nav a {
-  color: #ddd;
+  color: #000;
   text-transform: capitalize;
   letter-spacing: 1px;
   padding-left: 0;
@@ -150,10 +162,10 @@ nav ul li ul li:hover {
 
 /* Background color change on Hover */
 nav a:hover {
-  color: #ddd;
+  color: #ec7b1d;
 }
 .menu li.active a {
-  color: #fff;
+  color: #ec7b1d;
 }
 
 /* Hide Dropdowns by Default
@@ -643,7 +655,6 @@ h2.heading {
   line-height: 28px;
   margin-top: 15px;
 }
-.banner-bottom{background-color: #fafafa;}
 .banner-bottom .image-column {
   position: relative;
   margin-bottom: 30px;
@@ -759,7 +770,7 @@ h2.heading {
   margin-bottom: 60px;
 }
 .services-inner {
-  border: 1px solid rgba(90, 122, 190, 0.12);
+  border: 1px solid #a32444;
   transition: 0.3s;
   background: #fff;
   -webkit-box-shadow: 0 3px 0 0 rgba(90, 122, 190, 0.12);
@@ -772,14 +783,13 @@ h2.heading {
 	display: grid;
 	place-items: center;
 	padding: 40px 30px;
-	background-color: #a32444;
 }
 .our-services-img {
   text-align: center;
 }
 .our-services-img span.fa {
   font-size: 70px;
-  color: #fff;
+  color: #a32444;
 }
 .our-services-text {
   padding-right: 10px;
@@ -789,7 +799,7 @@ h2.heading {
   padding: 30px 0 0;
 }
 .our-services-text h4 {
-  color: #fff;
+  color: #a32444;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -799,7 +809,7 @@ h2.heading {
   text-transform: capitalize;
 }
 .our-services-text h4::before {
-  background: #fff none repeat scroll 0 0;
+  background: #a32444 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 1px;
@@ -807,7 +817,7 @@ h2.heading {
   width: 40px;
 }
 .our-services-wrapper:hover .services-inner {
-  background: #fff none repeat scroll 0 0;
+  background: #a32444 none repeat scroll 0 0;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .our-services-text p {
@@ -817,15 +827,16 @@ h2.heading {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  color: #fff;
+  color: #a32444;
 }
 .services {
   position: relative;
   z-index: 2;
+  background-color: #fafafa;
 }
-.our-services-wrapper:hover .services-inner p, .our-services-wrapper:hover .services-inner h4, .our-services-wrapper:hover .services-inner .our-services-img span.fa {color: #a32444;}
-.our-services-wrapper:hover .services-inner h4::before{background-color: #a32444;}
-.our-services-wrapper:hover .services-inner{border-color: #a32444;}
+.our-services-wrapper:hover .services-inner p, .our-services-wrapper:hover .services-inner h4, .our-services-wrapper:hover .services-inner .our-services-img span.fa {color: #fff;}
+.our-services-wrapper:hover .services-inner h4::before{background-color: #fff;}
+.our-services-wrapper:hover .services-inner{border-color: #fff;}
 
 /*-- //services-- */
 
@@ -1403,13 +1414,8 @@ h3.heading {
   color: #333;
   font-weight: 700;
 }
-
-.stats-section-w3pvt h3.heading,
-.testimonials h3.heading {
-  color: #fff;
-}
 .stats-section-w3pvt {
-  background: #a32444;
+  background: #fafafa;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1447,7 +1453,7 @@ p.para-text-w3ls {
   border: 8px solid #aaa;
 }
 .w3layouts_stats_left {
-  border: 1px solid transparent;
+  border: 1px solid #a32444;
   padding: 1em 0;
   background: #fff;
 }
@@ -1474,18 +1480,22 @@ p.para-text-w3ls {
 /*-- //stats --*/
 
 /*-- other services --*/
-
+.owl-carousel.owl-loaded{position: relative;}
+.owl-stage-outer{padding: 0 10px;}
+.owl-nav{position: absolute;bottom: 20px;right: 0;}
+.owl-nav button i{font-size: 2rem;color: #ddd;}
+.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev{margin: 0 0 0 10px;outline: none;}
 .info p {
   color: #888;
   font-size: 15px;
 }
 .info h4 {
   color: #222222;
-  font-size: 20px;
   font-weight: 700;
+  font-size: 1.3em;
   letter-spacing: 1px;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .info img {
   width: 50px;
@@ -1575,15 +1585,6 @@ p.para-text-w3ls {
 }
 /*-- //other services --*/
 
-/* -- testimonials --*/
-.testimonials {
-  background: url(../images/event.png) no-repeat 0px 0px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-size: cover;
-}
 .testi-w3pvt-grid p {
   letter-spacing: 1px;
   width: 100%;
@@ -1619,8 +1620,15 @@ footer {
 }
 
 .footer-layer {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
 }
+.footer-ul{}
+.footer-ul li{list-style: none;padding-bottom:10px;}
+.footer-ul li a{color: #fff;}
+.footer-ul li a:hover, .footer-ul li a:focus, .footer-ul li a:active{color:#ff8a01;}
+.footer-ul li a i{padding-right: 5px;}
+.footer-h4{color: #fff;padding: 0 0 25px}
+.iso-cert{background-color: #fff;margin: 15px 0 0;}
 .footer-grid_section {
   width: 70%;
   margin: auto;
@@ -1718,11 +1726,11 @@ ul.links a {
 }
 .subscribe h3 {
   font-size: 40px;
-  color: #fff;
+  color: #333;
   letter-spacing: 1px;
 }
 .subscribe {
-  background: #a32444;
+  background: #fafafa;
 }
 .subscribe-right {
   background: #f6f6f6;
@@ -1732,7 +1740,7 @@ ul.links a {
   text-align: center;
 }
 .news-icon span.fa {
-  color: #fff;
+  color: #333;
   font-size: 55px;
   margin-top: 20px;
 }
@@ -1765,6 +1773,8 @@ a.move-top span {
 }
 
 /*-- //move top --*/
+
+.team-grid img{max-height: 300px;}
 
 /*-- responsive design --*/
 
@@ -1910,14 +1920,6 @@ a.move-top span {
   .csslider > .navigation {
     bottom: -2% !important;
     left: -1% !important;
-  }
-  .testimonials {
-    background: url(../images/testimonials.jpg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
   }
 }
 @media (max-width: 736px) {
