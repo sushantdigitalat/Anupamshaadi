@@ -392,7 +392,7 @@ li > a:only-child:after {
   box-sizing: border-box;
 }
 .banner-form-w3 .padding {
-  background-color: rgba(163, 36, 68,0.4);
+  background-color: rgba(225, 45, 111,0.5);
   /* -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); */
@@ -595,26 +595,11 @@ h2.heading {
   line-height: 1em;
   color: #ff8a01;
   font-weight: 500;
-  background: rgb(163, 36, 68);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(163, 36, 68, 1) 0%,
-    rgba(236, 123, 29, 1) 49%,
-    rgba(236, 123, 29, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(163, 36, 68, 1) 0%,
-    rgba(236, 123, 29, 1) 49%,
-    rgba(236, 123, 29, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(163, 36, 68, 1) 0%,
-    rgba(236, 123, 29, 1) 49%,
-    rgba(236, 123, 29, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a32444",endColorstr="#ec7b1d",GradientType=1);
+  background: rgb(225,45,111);
+  background: -moz-linear-gradient(90deg, rgba(225,45,111,1) 0%, rgba(225,45,111,1) 25%, rgba(236,123,29,1) 55%, rgba(236,123,29,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(225,45,111,1) 0%, rgba(225,45,111,1) 25%, rgba(236,123,29,1) 55%, rgba(236,123,29,1) 100%);
+  background: linear-gradient(90deg, rgba(225,45,111,1) 0%, rgba(225,45,111,1) 25%, rgba(236,123,29,1) 55%, rgba(236,123,29,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e12d6f",endColorstr="#ec7b1d",GradientType=1); 
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -625,8 +610,8 @@ h2.heading {
 .animate-charcter {
   background-image: linear-gradient(
     -225deg,
-    #a32444 0%,
-    #a83353 29%,
+    #e12d6f 0%,
+    #e12d6f 29%,
     #ec7b1d 67%,
     #ec7b1d 100%
   );
@@ -744,7 +729,7 @@ h2.heading {
   font-weight: 700;
 }
 .btn-box .btn:hover {
-  background-color: #a32444;
+  background-color: #e12d6f;
 }
 .anim-icons.full-width {
   max-width: 100%;
@@ -770,7 +755,7 @@ h2.heading {
   margin-bottom: 60px;
 }
 .services-inner {
-  border: 1px solid #a32444;
+  border: 1px solid #e12d6f;
   transition: 0.3s;
   background: #fff;
   -webkit-box-shadow: 0 3px 0 0 rgba(90, 122, 190, 0.12);
@@ -789,7 +774,7 @@ h2.heading {
 }
 .our-services-img span.fa {
   font-size: 70px;
-  color: #a32444;
+  color: #e12d6f;
 }
 .our-services-text {
   padding-right: 10px;
@@ -799,7 +784,7 @@ h2.heading {
   padding: 30px 0 0;
 }
 .our-services-text h4 {
-  color: #a32444;
+  color: #e12d6f;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -809,7 +794,7 @@ h2.heading {
   text-transform: capitalize;
 }
 .our-services-text h4::before {
-  background: #a32444 none repeat scroll 0 0;
+  background: #e12d6f none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 1px;
@@ -817,7 +802,7 @@ h2.heading {
   width: 40px;
 }
 .our-services-wrapper:hover .services-inner {
-  background: #a32444 none repeat scroll 0 0;
+  background: #e12d6f none repeat scroll 0 0;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .our-services-text p {
@@ -827,7 +812,7 @@ h2.heading {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  color: #a32444;
+  color: #e12d6f;
 }
 .services {
   position: relative;
@@ -918,7 +903,7 @@ h2.heading {
 }
 
 .pricing-header h5 {
-  background: #a32444;
+  background: #e12d6f;
   color: #fff;
   line-height: normal;
   margin: 0 auto;
@@ -1062,7 +1047,7 @@ h2.heading {
 
 .ribbon span {
   top: 0;
-  color: #a32444;
+  color: #e12d6f;
   font-size: 13px;
   font-weight: 500;
   float: left;
@@ -1070,7 +1055,7 @@ h2.heading {
 }
 
 .ribbon i {
-  color: #a32444;
+  color: #e12d6f;
   font-weight: 800;
   font-size: 14px;
   margin: 11px;
@@ -1210,7 +1195,7 @@ h2.heading {
   border: none;
 }
 .pricing-col.current .pricing-header {
-  background-color: #a32444;
+  background-color: #e12d6f;
   color: #fff;
 }
 .pricing-col.current .pricing-header h5 {
@@ -1218,7 +1203,7 @@ h2.heading {
 }
 .comparison-table .pricing-col.current .pricing-feature li,
 .comparison-table .pricing-col.current .pricing-feature li:nth-child(2n + 1) {
-  background: #a32444;
+  background: #e12d6f;
   border-bottom: 1px solid #fff;
 }
 .comparison-table .pricing-col.current .pricing-feature li p {
@@ -1226,7 +1211,7 @@ h2.heading {
 }
 .btn-white {
   background-color: #fff;
-  color: #a32444;
+  color: #e12d6f;
   border-color: #fff;
   border-radius: 0;
 }
@@ -1243,7 +1228,7 @@ h2.heading {
 
 .current .pricing-footer {
   height: 160px;
-  background-color: #a32444;
+  background-color: #e12d6f;
 }
 
 .current:hover {
@@ -1453,7 +1438,7 @@ p.para-text-w3ls {
   border: 8px solid #aaa;
 }
 .w3layouts_stats_left {
-  border: 1px solid #a32444;
+  border: 1px solid #e12d6f;
   padding: 1em 0;
   background: #fff;
 }
@@ -1539,21 +1524,21 @@ p.para-text-w3ls {
     0 10px 20px 0 rgba(90, 122, 190, 0.2);
   box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
     0 10px 20px 0 rgba(90, 122, 190, 0.2);
-  background-color: #a32444;
+  background-color: #e12d6f;
   color: #fff;
 }
 .btn-red {
   color: #fff;
-  border-color: #a32444;
+  border-color: #e12d6f;
   border-radius: 0;
-  background-color: #a32444;
+  background-color: #e12d6f;
 }
 .btn-red:hover,
 .btn-red:active,
 .btn-red:focus {
   background-color: #fff;
-  border-color: #a32444;
-  color: #a32444;
+  border-color: #e12d6f;
+  color: #e12d6f;
 }
 .btn-white:hover,
 .btn-white:active,
@@ -1561,21 +1546,21 @@ p.para-text-w3ls {
 .btn-white:not(:disabled):not(.disabled):active:focus,
 .btn-white:not(:disabled):not(.disabled).active:focus,
 .btn-white:not(:disabled):not(.disabled):active {
-  color: #a32444;
+  color: #e12d6f;
   background-color: #fff;
   border-color: #fff;
   outline: none;
   box-shadow: none;
 }
 .btn-primary.orange {
-  background-color: #a32444;
+  background-color: #e12d6f;
   color: #fff;
 }
 .text-orange {
-  color: #a32444;
+  color: #e12d6f;
 }
 .border-orange {
-  border-color: #a32444;
+  border-color: #e12d6f;
 }
 .text-disabled {
   color: #aaa;
