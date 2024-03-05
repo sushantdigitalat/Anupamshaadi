@@ -79,6 +79,7 @@ header {
   width: 100%;
   padding: 0;
   z-index: 9;
+  position: absolute;
 }
 .right-p li,
 .right-p li a {
@@ -146,14 +147,14 @@ nav ul li {
 
 /* Styling the links */
 nav a {
-  color: #000;
+  color: #fff;
   text-transform: capitalize;
   letter-spacing: 1px;
   padding-left: 0;
   padding-right: 0;
   padding: 10px 13px;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   vertical-align: middle;
 }
 nav ul li ul li:hover {
@@ -374,28 +375,85 @@ li > a:only-child:after {
   -o-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
+  height: 100%;
 }
 .layer {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
 }
+.w3ls_banner_txt{padding: 15vw 0 5vw;box-sizing: border-box;}
 .w3ls_banner_txt p {
   color: #eee;
   text-transform: capitalize;
   font-size: 15px;
 }
-.banner-text-w3ls {
-  padding: 24vw 0 10vw;
-  box-sizing: border-box;
-}
 .banner-form-w3 {
-  padding: 5vw 0 0vw;
+  padding: 15px 5px 5px 5px;
   box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 70%;
+  margin: auto auto 40px;
+  position: relative;
+  filter: drop-shadow(5px 5px 10px #000000);
 }
+/* .banner-form-w3::before{content: "";
+	left: 0;
+	top: 0;
+	z-index: 99;
+    background: url("../images/hearts.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;} */
+.form-inline .form-group{padding-right: 0;}
+.dropselect{border-radius: 5px;border: 1px solid #999;background-color: #fff;}
+.form-inline label{color: #333;margin-bottom: 10px;}
 .banner-form-w3 .padding {
   background-color: rgba(225, 45, 111,0.5);
   /* -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); */
+}
+.banner-bottom-stats{
+	background-color: #fff;
+	filter: drop-shadow(5px 5px 10px #000000);
+	width: 100%;
+	border-radius: 5px;
+	padding: 40px;
+	position: relative;
+	z-index: 9;
+	bottom: -50px;
+}
+.banner-bottom-stats h3.heading{
+	font-size: 24px;
+	line-height: 42px;
+}
+.banner-bottom-stats h3.heading span b{
+	color: #e12d6f;
+	font-weight: 700;
+}
+.banner-bottom-stats h3.heading span{
+	font-size: 24px;
+}
+.heading-h5{
+	font-size: 16px;
+	text-transform: capitalize;
+}
+.heading-h5 span{
+	font-size: 24px;
+	display: block;
+	padding: 0 0 5px;
+	position: relative;
+}
+.heading-h5 span::before{
+	content: "";
+	left: 0;
+	top: 0;
+	z-index: 0;
+    background: url("../images/ring.png") no-repeat;
+    width: 48px;
+    height: 48px;
+    position: absolute;
 }
 
 h3.b-w3ltxt span,
@@ -403,14 +461,14 @@ h3.b-w3ltxt span,
   color: #fff;
 }
 h3.b-w3ltxt {
-  font-size: 3.5em;
+  font-size: 2.5em;
   color: #fff;
   font-weight: 600;
   text-shadow: 1px 1px 0px #333;
 }
 
 h4.b-w3ltxt {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
   color: #fff;
 }
@@ -721,12 +779,11 @@ h2.heading {
   font-size: 18px;
 }
 .btn-box .btn {
-  background-color: #ec7b1d;
-  color: #fff;
-  padding: 15px 20px;
-  border-radius: 0;
+  padding: 12px 20px;
+  border-radius: 5px;
   margin: 10px 0;
   font-weight: 700;
+  width: 100%;
 }
 .btn-box .btn:hover {
   background-color: #e12d6f;
@@ -1532,6 +1589,7 @@ p.para-text-w3ls {
   border-color: #e12d6f;
   border-radius: 0;
   background-color: #e12d6f;
+  font-weight: 700;
 }
 .btn-red:hover,
 .btn-red:active,
