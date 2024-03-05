@@ -425,10 +425,10 @@ li > a:only-child:after {
 	padding: 40px;
 	position: relative;
 	z-index: 9;
-	bottom: -50px;
+	bottom: -90px;
 }
 .banner-bottom-stats h3.heading{
-	font-size: 20px;
+	font-size: 21px;
 	line-height: 36px;
 }
 .banner-bottom-stats h3.heading span b{
@@ -881,7 +881,7 @@ h2.heading {
   position: relative;
   z-index: 2;
   background-color: #fafafa;
-  padding-top: 120px!important;
+  padding-top: 160px!important;
 }
 .our-services-wrapper:hover .services-inner p, .our-services-wrapper:hover .services-inner h4, .our-services-wrapper:hover .services-inner .our-services-img span.fa {color: #fff;}
 .our-services-wrapper:hover .services-inner h4::before{background-color: #fff;}
