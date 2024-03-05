@@ -388,14 +388,16 @@ li > a:only-child:after {
   font-size: 15px;
 }
 .banner-form-w3 {
-  padding: 15px 5px 5px 5px;
+  padding: 15px 5px;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.1);
   border-radius: 5px;
-  width: 70%;
+  width: 63%;
   margin: auto auto 40px;
   position: relative;
   filter: drop-shadow(5px 5px 10px #000000);
+  color: #fff;
+  font-size: 18px;
 }
 /* .banner-form-w3::before{content: "";
 	left: 0;
@@ -406,14 +408,15 @@ li > a:only-child:after {
     height: 100px;
     position: absolute;} */
 .form-inline .form-group{padding-right: 0;}
-.dropselect{border-radius: 5px;border: 1px solid #999;background-color: #fff;}
-.form-inline label{color: #333;margin-bottom: 10px;}
+.dropselect{border-radius: 5px;border: 1px solid #999;background-color: #fff;margin: 0;}
+.form-inline label{color: #000;margin-bottom: 10px;}
 .banner-form-w3 .padding {
   background-color: rgba(225, 45, 111,0.5);
   /* -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); */
 }
+.grid-stats{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 40px;}
 .banner-bottom-stats{
 	background-color: #fff;
 	filter: drop-shadow(5px 5px 10px #000000);
@@ -425,27 +428,30 @@ li > a:only-child:after {
 	bottom: -50px;
 }
 .banner-bottom-stats h3.heading{
-	font-size: 24px;
-	line-height: 42px;
+	font-size: 20px;
+	line-height: 36px;
 }
 .banner-bottom-stats h3.heading span b{
 	color: #e12d6f;
 	font-weight: 700;
 }
 .banner-bottom-stats h3.heading span{
-	font-size: 24px;
+	font-size: 22px;
 }
 .heading-h5{
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: capitalize;
+  position: relative;
+  padding-left: 50px;
 }
 .heading-h5 span{
-	font-size: 24px;
+	font-size: 36px;
 	display: block;
 	padding: 0 0 5px;
 	position: relative;
 }
-.heading-h5 span::before{
+.heading-h5 label{line-height: 24px;}
+.heading-h5::before{
 	content: "";
 	left: 0;
 	top: 0;
@@ -781,7 +787,7 @@ h2.heading {
 .btn-box .btn {
   padding: 12px 20px;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 0;
   font-weight: 700;
   width: 100%;
 }
@@ -875,6 +881,7 @@ h2.heading {
   position: relative;
   z-index: 2;
   background-color: #fafafa;
+  padding-top: 120px!important;
 }
 .our-services-wrapper:hover .services-inner p, .our-services-wrapper:hover .services-inner h4, .our-services-wrapper:hover .services-inner .our-services-img span.fa {color: #fff;}
 .our-services-wrapper:hover .services-inner h4::before{background-color: #fff;}
