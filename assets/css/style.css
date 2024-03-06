@@ -376,6 +376,7 @@ li > a:only-child:after {
   -ms-background-size: cover;
   background-size: cover;
   height: 100%;
+  margin-bottom: -30px;
 }
 .layer {
   background: rgba(0, 0, 0, 0.9);
@@ -388,7 +389,7 @@ li > a:only-child:after {
   font-size: 15px;
 }
 .banner-form-w3 {
-  padding: 15px 5px;
+  padding: 15px 0;
   box-sizing: border-box;
   background-color: rgba(255,255,255,0.1);
   border-radius: 5px;
@@ -408,7 +409,7 @@ li > a:only-child:after {
     height: 100px;
     position: absolute;} */
 .form-inline .form-group{padding-right: 0;}
-.dropselect{border-radius: 5px;border: 1px solid #999;background-color: #fff;margin: 0;}
+.dropselect{border-radius: 5px;border: 1px solid #999;background-color: #fff;margin: 0;color: #000;}
 .form-inline label{color: #000;margin-bottom: 10px;}
 .banner-form-w3 .padding {
   background-color: rgba(225, 45, 111,0.5);
@@ -425,10 +426,10 @@ li > a:only-child:after {
 	padding: 40px;
 	position: relative;
 	z-index: 9;
-	bottom: -90px;
+	bottom: -60px;
 }
 .banner-bottom-stats h3.heading{
-	font-size: 21px;
+	font-size: 20px;
 	line-height: 36px;
 }
 .banner-bottom-stats h3.heading span b{
@@ -790,9 +791,34 @@ h2.heading {
   margin: 0;
   font-weight: 700;
   width: 100%;
+  transition: all 0.2s linear 0s;
+  position: relative;
 }
 .btn-box .btn:hover {
-  background-color: #e12d6f;
+  text-indent: -20px;
+  background-color: #ec7b1d;color: #fff;
+  border-color: #ec7b1d;
+}
+
+
+.btn-box .btn:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  transition: all 0.2s linear 0s;
+}
+.btn-box .btn:hover:before {
+  opacity: 1;
+  text-indent: -40px;
 }
 .anim-icons.full-width {
   max-width: 100%;
@@ -1593,17 +1619,17 @@ p.para-text-w3ls {
 }
 .btn-red {
   color: #fff;
-  border-color: #e12d6f;
+  border-color: #ec7b1d;
   border-radius: 0;
-  background-color: #e12d6f;
+  background-color: #ec7b1d;
   font-weight: 700;
 }
 .btn-red:hover,
 .btn-red:active,
 .btn-red:focus {
   background-color: #fff;
-  border-color: #e12d6f;
-  color: #e12d6f;
+  border-color: #ec7b1d;
+  color: #ec7b1d;
 }
 .btn-white:hover,
 .btn-white:active,
