@@ -892,6 +892,10 @@ h2.heading {
   grid-template-columns:1fr 3fr;
   justify-items: start;
 }
+.services-inner.right{
+  border-right: 1px solid #e12d6f;
+  border-left: none;
+}
 .anim-icons {
   position: absolute;
   left: 0;
@@ -904,14 +908,15 @@ h2.heading {
 }
 .rings{
   top: 20%;
-  left: 33%;
+  left: 36%;
   background-image: url(../images/rings.png);
   background-position: center;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
+  background-size: 350px 350px;
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 .dots{
   top: 15%;
@@ -964,7 +969,11 @@ h2.heading {
 .our-services-img {
 padding: 0 40px;
 }
-.our-services-img img{color: #888;max-width: 48px;max-height: 44px;opacity: 0.6;}
+.our-services-img img{
+  color: #888;
+  max-width: 48px;
+  max-height: 44px;
+  opacity: 0.8;}
 .our-services-img span.fa {
   font-size: 70px;
   color: #e12d6f;
@@ -990,7 +999,10 @@ padding: 0 40px;
   font-weight: 400;
   line-height: 26px;
 }
-.team{position: relative;}
+.team{
+  position: relative;
+  background-color: #fafafa;
+}
 /* .our-services-wrapper:hover .services-inner p, .our-services-wrapper:hover .services-inner h4, .our-services-wrapper:hover .services-inner .our-services-img span.fa {color: #fff;}
 .our-services-wrapper:hover .services-inner h4::before{background-color: #fff;}
 .our-services-wrapper:hover .services-inner{border-color: #fff;} */
@@ -1200,7 +1212,7 @@ padding: 0 40px;
 /*   Pricing Ribbons     */
 /* =================== */
 .ribbon {
-  background: #fff;
+  background: #e12d6f;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23), 0 1px 5px rgba(0, 0, 0, 0.16);
   height: 35px;
   line-height: 35px;
@@ -1231,7 +1243,7 @@ padding: 0 40px;
 
 .ribbon span {
   top: 0;
-  color: #e12d6f;
+  color: #fff;
   font-size: 13px;
   font-weight: 500;
   float: left;
@@ -1239,7 +1251,7 @@ padding: 0 40px;
 }
 
 .ribbon i {
-  color: #e12d6f;
+  color: #fff;
   font-weight: 800;
   font-size: 14px;
   margin: 11px;
@@ -1761,7 +1773,7 @@ p.para-text-w3ls {
 .text-disabled {
   color: #aaa;
 }
-.other-services {
+.testimonials {
   background-color: #fafafa;
 }
 /*-- //other services --*/
@@ -1909,9 +1921,6 @@ ul.links a {
   font-size: 40px;
   color: #333;
   letter-spacing: 1px;
-}
-.subscribe {
-  background: #fafafa;
 }
 .subscribe-right {
   background: #f6f6f6;
