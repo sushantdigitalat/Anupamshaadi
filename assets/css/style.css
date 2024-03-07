@@ -916,7 +916,7 @@ h2.heading {
   border-left: none;
 }
 .services-inner-2 {
-	padding: 20px 0 50px;
+	padding: 0 0 50px;
   display: grid;
   grid-template-columns:auto;
   justify-items: left;
@@ -993,9 +993,10 @@ h2.heading {
 }
 .our-services-img img{
   color: #888;
-  max-width: 48px;
-  max-height: 44px;
-  opacity: 0.7;}
+  max-width: 64px;
+  max-height: 64px;
+  opacity: 0.7;
+}
 .our-services-img span.fa {
   font-size: 70px;
   color: #e12d6f;
@@ -1006,14 +1007,17 @@ h2.heading {
 .our-services-text {
   overflow: hidden;
 }
+.our-services-text h3{
+  font-weight: 700;
+}
 .our-services-text h4 {
   color: #333;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   text-transform: capitalize;
   padding: 0 0 15px;
   margin: 0 0 20px;
-  font-weight: 700;
+  line-height: 30px;
 }
 .our-services-text h4::after{
   content: "";
@@ -1858,8 +1862,7 @@ footer {
 .footer-layer {
   background: rgba(0, 0, 0, 0.9);
 }
-.footer-ul{}
-.footer-ul li{list-style: none;padding-bottom:10px;}
+.footer-ul li{list-style: none;padding-bottom:20px;}
 .footer-ul li a{color: #fff;}
 .footer-ul li a:hover, .footer-ul li a:focus, .footer-ul li a:active{color:#ff8a01;}
 .footer-ul li a i{padding-right: 5px;}
