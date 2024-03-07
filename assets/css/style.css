@@ -376,7 +376,7 @@ li > a:only-child:after {
   -ms-background-size: cover;
   background-size: cover;
   height: 100%;
-  margin-bottom: -30px;
+  margin-bottom: -245px;
 }
 .layer {
   background: rgba(0, 0, 0, 0.9);
@@ -394,7 +394,7 @@ li > a:only-child:after {
   background-color: rgba(255,255,255,0.1);
   border-radius: 5px;
   width: 60%;
-  margin: auto auto 40px;
+  margin: auto auto 50px;
   position: relative;
   filter: drop-shadow(5px 5px 10px #000000);
   color: #fff;
@@ -443,16 +443,21 @@ li > a:only-child:after {
   -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); */
 }
-.grid-stats{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 40px;}
+.grid-stats{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
 .banner-bottom-stats{
 	background-color: #fff;
-	filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.2));
+	-webkit-box-shadow: 1px 1px 5px 1px rgba(90, 122, 190, 0.2);
+  box-shadow: 1px 1px 5px 1px rgba(90, 122, 190, 0.2);
 	width: 100%;
 	border-radius: 5px;
-	padding: 40px;
+	padding: 40px 80px;
 	position: relative;
 	z-index: 9;
-	bottom: -60px;
+  margin-top: 100px;
 }
 .banner-bottom-stats h3.heading{
 	font-size: 20px;
@@ -468,19 +473,27 @@ li > a:only-child:after {
 	font-size: 22px;
 }
 .heading-h5{
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: capitalize;
   position: relative;
-  padding-left: 50px;
 }
 .heading-h5 span{
-	font-size: 36px;
+	font-size: 24px;
 	display: block;
 	padding: 0 0 5px;
 	position: relative;
 }
-.heading-h5 label{line-height: 24px;}
-.heading-h5::before{
+.heading-h5 span b{
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+.heading-h5 label{
+  line-height: 24px;
+  font-weight: 700;
+  color: #333;
+}
+/* .heading-h5::before{
 	content: "";
 	left: 0;
 	top: 0;
@@ -489,7 +502,7 @@ li > a:only-child:after {
     width: 48px;
     height: 48px;
     position: absolute;
-}
+} */
 
 h3.b-w3ltxt span,
 .text-white {
@@ -745,6 +758,8 @@ h2.heading {
 .image-column .image-box {
   position: relative;
   padding-left: 80px;
+  width: 450px;
+  margin: auto;
 }
 .image-column .image-box img {
   position: relative;
@@ -863,7 +878,11 @@ h2.heading {
   max-width: 1170px;
   margin: 0 auto;
 }
-.about-us{position: relative;}
+.about-us{
+  position: relative;
+  background-color: #fafafa;
+  padding-top: 280px !important;
+}
 /*-- banner bottom --*/
 
 /*-- services --*/
@@ -896,6 +915,12 @@ h2.heading {
   border-right: 1px solid #e12d6f;
   border-left: none;
 }
+.services-inner-2 {
+	padding: 20px 0 50px;
+  display: grid;
+  grid-template-columns:auto;
+  justify-items: left;
+}
 .anim-icons {
   position: absolute;
   left: 0;
@@ -916,7 +941,7 @@ h2.heading {
   height: 350px;
   background-size: 350px 350px;
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.15;
 }
 .dots{
   top: 15%;
@@ -931,7 +956,7 @@ h2.heading {
   opacity: 0.1;
 }
 .dots-2{
-  top: 18%;
+  top: 46%;
   left: 0;
   background-image: url(../images/dots.png);
   background-position: center;
@@ -943,7 +968,7 @@ h2.heading {
   opacity: 0.1;
 }
 .hearts{
-  top: 12%;
+  top: 39%;
   left: 45%;
   background-image: url(../images/hearts.png);
   background-position: center;
@@ -966,14 +991,11 @@ h2.heading {
   position: absolute;
   opacity: 0.2;
 }
-.our-services-img {
-padding: 0 40px;
-}
 .our-services-img img{
   color: #888;
   max-width: 48px;
   max-height: 44px;
-  opacity: 0.8;}
+  opacity: 0.7;}
 .our-services-img span.fa {
   font-size: 70px;
   color: #e12d6f;
@@ -986,20 +1008,34 @@ padding: 0 40px;
 }
 .our-services-text h4 {
   color: #333;
-  font-size: 18px;
-  letter-spacing: 1px;
+  font-size: 16px;
   position: relative;
   text-transform: capitalize;
+  padding: 0 0 15px;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+.our-services-text h4::after{
+  content: "";
+  position: absolute;
+  background-color: #e12d6f;
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
 }
 .our-services-text p {
   margin-bottom: 0;
+  line-height: 20px;
+  font-size: 13px;
+  color: #444;
 }
 .services p {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
 }
-.team{
+.about-us, .other-services, .subscribe{
   position: relative;
   background-color: #fafafa;
 }
@@ -1441,7 +1477,7 @@ padding: 0 40px;
 /*-- team --*/
 
 .team-info {
-  padding: 20px 20px 0;
+  padding: 20px 25px;
 }
 
 .team-info h3 {
@@ -1456,6 +1492,20 @@ padding: 0 40px;
   text-transform: uppercase;
   color: #888;
   letter-spacing: 1px;
+}
+.team-grid{
+  box-shadow: 1px 1px 5px 1px rgba(90, 122, 190, 0.2);
+}
+.team-grid img{max-height: 300px;}
+.team-grid h5{
+  font-size: 18px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+.team-grid p{
+  line-height: 27px;
 }
 /* layout */
 
@@ -1636,14 +1686,7 @@ p.para-text-w3ls {
   background: #fff;
 }
 .stats-icon {
-  background: #333;
   width: 250px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  line-height: 70px;
   margin: auto;
 }
 .stats-icon img{filter: grayscale(0.9);}
@@ -1773,8 +1816,8 @@ p.para-text-w3ls {
 .text-disabled {
   color: #aaa;
 }
-.testimonials {
-  background-color: #fafafa;
+.team, .testimonials {
+  position: relative;
 }
 /*-- //other services --*/
 
@@ -1964,7 +2007,6 @@ a.move-top span {
 
 /*-- //move top --*/
 
-.team-grid img{max-height: 300px;}
 
 /*-- responsive design --*/
 
