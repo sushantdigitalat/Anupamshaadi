@@ -1794,13 +1794,13 @@ p.para-text-w3ls {
   border: 1px solid #eee;
   position: relative;
   border-radius: 5px;
-  width: 90%;
+  width: 85%;
   margin: auto;
   position: relative;
 }
 .partners::before{
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 57%;
   height: 120px;
   width: 1px;
