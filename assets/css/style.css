@@ -1032,26 +1032,48 @@ h2.heading {
   opacity: 0.2;
 }
 .circle{
-  top: 5%;
-  left: 10%;
+  top: -15%;
+  left: -10%;
   background-color: #e12d6f;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   content: "";
   position: absolute;
   opacity: 0.05;
 }
-.circle-2{
-  top: 25%;
-  left: 25%;
-  background-color: #ec7b1d;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-  opacity: 0.05;
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 .our-services-img img{
   color: #888;
@@ -1101,6 +1123,7 @@ h2.heading {
 .about-us, .subscribe{
   position: relative;
   background-color: #fafafa;
+  overflow: hidden;
 }
 .trusted-box{
   display: grid;
@@ -2710,11 +2733,14 @@ a.move-top span {
   text-transform: capitalize;
   display: inline-block;
   border-radius: 5px;
+  width: 200px;
+  position: relative;
+}
+.snip1464 .featured .plan-select a{
+  width: 300px;
 }
 .snip1464 .plan-select a:hover, .snip1464 .plan-select a:focus, .snip1464 .plan-select a:active {
   text-indent: -20px;
-  background-color: #e12d6f;color: #fff;
-  border-color: #e12d6f;
 }
 .snip1464 .plan-select a:before {
   content: "";
@@ -2725,7 +2751,7 @@ a.move-top span {
   align-items: center;
   justify-content: center;
   right: 0;
-  top: 0;
+  top: 2px;
   opacity: 0;
   height: 100%;
   width: 40px;
@@ -2733,10 +2759,7 @@ a.move-top span {
 }
 .snip1464 .plan-select a:hover:before {
   opacity: 1;
-  text-indent: -40px;
-}
-.snip1464 .plan-select a:hover {
-  background-color: #e12d6f;
+  text-indent: -45px;
 }
 .snip1464 .featured {
   margin-top: -30px;
