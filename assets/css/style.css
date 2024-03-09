@@ -400,20 +400,31 @@ li > a:only-child:after {
 
 /*-- banner --*/
 .banner {
-  background: url(../images/banner.jpg) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  margin-bottom: -245px;
+  background-image: url(../images/slider.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100%;
+  /* margin-bottom: -305px; */
+  position: relative;
+}
+.banner-image{
+  background-image: url(../images/slider-1.png);
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  content: "";
+  width: 650px;
+  height: 470px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: none;
 }
 .layer {
-  background: rgba(0, 0, 0, 0.9);
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(255, 255, 255, 0.6); */
 }
-.w3ls_banner_txt{padding: 15vw 0 5vw;box-sizing: border-box;}
+.w3ls_banner_txt{padding: 20vw 0 1vw;box-sizing: border-box;}
 .w3ls_banner_txt p {
   color: #eee;
   text-transform: capitalize;
@@ -422,12 +433,11 @@ li > a:only-child:after {
 .banner-form-w3 {
   padding: 15px 0;
   box-sizing: border-box;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(0,0,0,0.25);
   border-radius: 5px;
   width: 60%;
-  margin: auto auto 50px;
+  margin: 0 0 80px;
   position: relative;
-  filter: drop-shadow(5px 5px 10px #000000);
   color: #fff;
   font-size: 18px;
 }
@@ -481,14 +491,13 @@ li > a:only-child:after {
 }
 .banner-bottom-stats{
 	background-color: #fff;
-	-webkit-box-shadow: 1px 1px 5px 1px rgba(90, 122, 190, 0.2);
-  box-shadow: 1px 1px 5px 1px rgba(90, 122, 190, 0.2);
+	/* -webkit-box-shadow: 1px 1px 5px 1px rgba(90, 122, 190, 0.2);
+  box-shadow: 1px 1px 5px 1px rgba(90, 122, 190, 0.2); */
 	width: 100%;
 	border-radius: 5px;
-	padding: 40px 80px;
+	padding: 60px 0;
 	position: relative;
 	z-index: 9;
-  margin-top: 100px;
 }
 .banner-bottom-stats h3.heading{
 	font-size: 20px;
@@ -539,11 +548,15 @@ h3.b-w3ltxt span,
 .text-white {
   color: #fff;
 }
+h3.b-w3ltxt span{
+  color: #ec7b1d;
+}
 h3.b-w3ltxt {
-  font-size: 2.5em;
+  font-size: 2.7em;
   color: #fff;
   font-weight: 600;
-  text-shadow: 1px 1px 0px #333;
+  /* text-shadow: 1px 1px 0px #333; */
+  margin-bottom: 50px;
 }
 
 h4.b-w3ltxt {
@@ -912,7 +925,7 @@ h2.heading {
 .about-us{
   position: relative;
   background-color: #fafafa;
-  padding-top: 280px !important;
+  padding-top: 40px !important;
 }
 /*-- banner bottom --*/
 
@@ -947,11 +960,11 @@ h2.heading {
   border-left: none;
 }
 .services-inner-2 {
-	padding: 0 0 50px;
+	padding: 0 0 10px;
   display: grid;
   grid-template-columns:auto;
-  justify-items: center;
-  text-align: center;
+  justify-items: left;
+  text-align: left;
 }
 .anim-icons {
   position: absolute;
@@ -988,7 +1001,7 @@ h2.heading {
   opacity: 0.1;
 }
 .dots-2{
-  top: 46%;
+  top: 120px;
   left: 0;
   background-image: url(../images/dots.png);
   background-position: center;
@@ -1012,7 +1025,7 @@ h2.heading {
   opacity: 0.1;
 }
 .rings-3{
-  top: 39%;
+  top: 60px;
   left: 45%;
   background-image: url(../images/rings-3.webp);
   background-position: center;
@@ -1162,8 +1175,8 @@ h2.heading {
   width: 50px;
   height: 2px;
   bottom: 0;
-  left: 50%;
-  margin-left: -25px;
+  left: 0;
+  /* margin-left: -25px; */
 }
 .our-services-text p {
   margin-bottom: 0;
@@ -1176,7 +1189,7 @@ h2.heading {
   font-weight: 400;
   line-height: 26px;
 }
-.about-us, .subscribe{
+.about-us, .subscribe, .team{
   position: relative;
   background-color: #fafafa;
   overflow: hidden;
@@ -1198,7 +1211,7 @@ h2.heading {
   margin: 15px 0 0;
 }
 .other-services{
-  background: url(../images/banner.jpg) no-repeat center;
+  background: url(../images/slider.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2042,7 +2055,7 @@ p.para-text-w3ls {
 .text-disabled {
   color: #aaa;
 }
-.team, .testimonials {
+.testimonials {
   position: relative;
 }
 /*-- //other services --*/
