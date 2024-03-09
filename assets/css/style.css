@@ -1211,6 +1211,12 @@ h2.heading {
 .other-services .layer h3.heading{
   color: #fff;
 }
+.app-box{
+  text-align: center;
+}
+.app-box img{
+  max-width: 450px;
+}
 /* .our-services-wrapper:hover .services-inner p, .our-services-wrapper:hover .services-inner h4, .our-services-wrapper:hover .services-inner .our-services-img span.fa {color: #fff;}
 .our-services-wrapper:hover .services-inner h4::before{background-color: #fff;}
 .our-services-wrapper:hover .services-inner{border-color: #fff;} */
