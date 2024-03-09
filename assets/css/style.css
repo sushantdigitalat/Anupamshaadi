@@ -87,6 +87,9 @@ header {
   transition: all 0.5s ease;
 }
 header nav{padding: 10px 0;}
+.menu li a{
+  padding: 5px 25px;
+}
 header.fixed{
   position: fixed;
   top:0; 
