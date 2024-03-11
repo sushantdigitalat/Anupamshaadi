@@ -39,3 +39,15 @@ function active_course() {
     if (scroll >= 600) sticky.addClass('fixed');
     else sticky.removeClass('fixed');
   });
+
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      center: true,
+      nav: true,
+      dots: true,
+      items: 3,
+      navText: ['<span></span>', '<span></span>'],
+      autoplay: false,
+    })
+  });
