@@ -455,7 +455,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
   background-color: rgba(0,0,0,0.25);
   border-radius: 5px;
   width: 60%;
-  margin: auto auto 60px;
+  margin: auto auto 50px;
   position: relative;
   color: #fff;
   font-size: 18px;
@@ -575,6 +575,7 @@ h3.b-w3ltxt {
   font-weight: 600;
   /* text-shadow: 1px 1px 0px #333; */
   margin-bottom: 10px;
+  padding: 10px 0 0;
 }
 
 h4.b-w3ltxt {
@@ -763,14 +764,14 @@ h2.heading {
   line-height: 1em;
   color: #ff8a01;
   font-weight: 500;
-  background: rgb(225,45,111);
+  /* background: rgb(225,45,111);
   background: -moz-linear-gradient(90deg, rgba(225,45,111,1) 0%, rgba(236,123,29,1) 28%, rgba(236,123,29,1) 70%, rgba(225,45,111,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(225,45,111,1) 0%, rgba(236,123,29,1) 28%, rgba(236,123,29,1) 70%, rgba(225,45,111,1) 100%);
   background: linear-gradient(90deg, rgba(225,45,111,1) 0%, rgba(236,123,29,1) 28%, rgba(236,123,29,1) 70%, rgba(225,45,111,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e12d6f",endColorstr="#e12d6f",GradientType=1);  
   color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 15px;
@@ -820,7 +821,7 @@ h2.heading {
 .image-column .image-box {
   position: relative;
   padding-left: 80px;
-  width: 450px;
+  width: 500px;
   margin: auto;
 }
 .image-column .image-box img {
@@ -941,8 +942,6 @@ h2.heading {
   margin: 0 auto;
 }
 .about-us{
-  position: relative;
-  background-color: #fafafa;
   padding: 40px 0;
 }
 /*-- banner bottom --*/
@@ -960,22 +959,20 @@ h2.heading {
   
     margin-top: 25px;
     transition: .3s;
-    background: #fff;
+    background: transparent;
 	/* place-items: center;
 	padding: 20px 0;
   display: grid;
   grid-template-columns:1fr 3fr;
   justify-items: start; */
   padding: 0 30px 0;
-  min-height: 290px;
+  min-height: 310px;
   text-align: center;
-  border: 2px solid #e12d6f;
+  border: 2px solid #fff;
     border-radius: 5px;
 }
 .our-services-wrapper:hover .services-inner {
-    
-    border: 1px solid transparent;
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 10px 0px rgba(255, 255, 255, 0.2);
 }
 .services-inner.right{
   border-right: 1px solid #e12d6f;
@@ -984,18 +981,19 @@ h2.heading {
 .services-inner .our-services-img {
     max-width: 80px;
     max-height: 80px;
-    background: #fff;
+    background: rgba(0, 0, 0, 1);
     padding: 10px;
     position: relative;
     left: 50%;
-    margin-top: -45px;
+    margin-top: -40px;
     margin-left: -45px;
     text-align: center;
     border-radius: 5px;
+    border: 2px solid #fff;
 }
 .services-inner .our-services-img img{
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 48px;
+    max-height: 48px;
 }
 .services-inner .our-services-text {
     overflow: hidden;
@@ -1004,10 +1002,11 @@ h2.heading {
 .services-inner .our-services-text h3{
   font-weight: 700;
   font-size: 18px;
+  color: #fff;
 }
 .services-inner .our-services-text h4 {
-    color: #222222;
-    font-size: 18px;
+    color: #fff;
+    font-size: 21px;
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 15px;
@@ -1027,9 +1026,9 @@ h2.heading {
 }
 .services-inner .our-services-text p {
   margin-bottom: 0;
-  line-height: 20px;
-  font-size: 13px;
-  color: #444;
+  line-height: 24px;
+  font-size: 14px;
+  color: #fff;
 }
 .services-inner .services p {
   font-size: 14px;
@@ -1045,6 +1044,7 @@ h2.heading {
   }
   .services-inner-2 .our-services-text h3{
     font-size: 18px;
+    font-weight: 700;
   }
   .services-inner-2 .our-services-text h4{
     font-size: 13px;
@@ -1087,7 +1087,7 @@ h2.heading {
 }
 .dots-2{
   top: 120px;
-  left: 0;
+  left: 50%;
   background-image: url(../images/dots.png);
   background-position: center;
   background-size: 100px 100px;
@@ -1096,6 +1096,7 @@ h2.heading {
   height: 100px;
   position: absolute;
   opacity: 0.1;
+  margin-left: -670px;
 }
 .hearts{
   top: 39%;
@@ -1134,8 +1135,8 @@ h2.heading {
   opacity: 0.2;
 }
 .pink-rings{
-    top: 10%;
-    left: 40%;
+    top: 80px;
+    left: 50%;
     background-image: url(../images/pink-rings.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -1144,6 +1145,7 @@ h2.heading {
     height: 90px;
     position: absolute;
     opacity: 0.2;
+    margin-left: -110px;
   }
 .circle{
   top: -15%;
@@ -1242,7 +1244,7 @@ h2.heading {
   transform: rotate(45deg);
 }
 
-.about-us, .subscribe, .team{
+.about-us, .subscribe, .team, .how-it-works, .other-services{
   position: relative;
   background-color: #fafafa;
   overflow: hidden;
@@ -1265,23 +1267,21 @@ h2.heading {
   color: #333;
   /* margin: 15px 0 0; */
 }
-.other-services{
-  background: url(../images/slider.jpg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-}
-.other-services .layer, 
-.our-partner .layer{
+.our-partner .layer, 
+.how-it-works .layer,
+.subscribe .layer{
   background-color: rgba(0, 0, 0, 0.9);
 }
-.other-services .layer h3.heading, .our-partner .layer h3.heading{
+.our-partner .layer h3.heading,
+.how-it-works .layer h3.heading,
+.subscribe .layer h3.heading, 
+.text-white{
   color: #fff;
 }
-.our-partner{
-  background: url(../images/event.jpg) no-repeat center;
+.our-partner, 
+.how-it-works, 
+.subscribe{
+  background: url(../images/event.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1311,6 +1311,54 @@ h2.heading {
   float: right;
 }
 /*-- //services-- */
+
+.membership-box{
+    display: grid;
+    place-items: center;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
+    margin: 0 0 50px;
+}
+.members-icons{
+    padding: 10px;
+    background-color: #e12d6f;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.members-icons i{
+    font-size: 27px;
+}
+.membership-box h6{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0 14px;
+    text-transform: capitalize;
+    position: relative;
+    margin: 0 0 12px;
+}
+.membership-box h6::after{
+    position: absolute;
+    background-color: #e12d6f;
+    width: 40px;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 0;
+    height: 2px;
+    content: "";
+}
+.membership-box p{
+    letter-spacing: 0;
+    line-height: 21px;
+    width: 80%;
+}
 
 /* =================== */
 /*   Pricing Wrapper   */
