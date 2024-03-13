@@ -688,9 +688,8 @@ select {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
-  background: #111;
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 .three-grids-w3pvt-2 {
@@ -705,16 +704,40 @@ select {
   z-index: 1;
 }
 
-.three-grids-w3pvt-3 {
-  background: url(../images/couple3.jpg) no-repeat center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  min-height: 300px;
+.three-grids-w3pvt {
   position: relative;
   z-index: 1;
+}
+.three-grids-w3pvt img{
+    max-height: 300px;
+    max-width: 100%;
+}
+.success-info{
+    letter-spacing: normal;
+    line-height: 21px;
+    color: #fff;
+    padding: 10px 0 0;
+    display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 6; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+}
+.read-more{
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.read-more:hover,
+.read-more:active,
+.read-more:focus{
+    color: #ec7b1d;
+}
+.success-h5{
+    font-weight: 700;
+    text-transform: capitalize;
 }
 .three-grids-w3pvt-4 {
   background: url(../images/couple4.jpg) no-repeat center;
@@ -729,9 +752,21 @@ select {
 }
 
 .text-effect-wthree {
-  margin-top: 13em;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.75);
+  transition: .5s ease;
+  overflow: hidden;
+  height: 80px;
 }
-
+.three-grids-w3pvt:hover .text-effect-wthree {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
 .text-effect-wthree h5 {
   font-size: 22px;
   color: #fff;
@@ -955,9 +990,26 @@ h2.heading {
 .mb-60 {
   margin-bottom: 60px;
 }
+.step-box{
+    width: 80px;
+    height: 80px;
+    background: #e12d6f;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    text-align: center;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
 .services-inner {
   
-    margin-top: 25px;
+    margin-top: 60px;
     transition: .3s;
     background: transparent;
 	/* place-items: center;
@@ -966,34 +1018,44 @@ h2.heading {
   grid-template-columns:1fr 3fr;
   justify-items: start; */
   padding: 0 30px 0;
-  min-height: 310px;
+  min-height: 320px;
   text-align: center;
-  border: 2px solid #fff;
     border-radius: 5px;
+    position: relative;
 }
-.our-services-wrapper:hover .services-inner {
+.services-inner.arrow::after{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    content: "\f178";
+    font-size: 56px;
+    color: #fff;
+    font-family: "FontAwesome";
+}
+/* .our-services-wrapper:hover .services-inner {
     box-shadow: 0px 1px 10px 0px rgba(255, 255, 255, 0.2);
-}
+} */
 .services-inner.right{
   border-right: 1px solid #e12d6f;
   border-left: none;
 }
 .services-inner .our-services-img {
-    max-width: 80px;
-    max-height: 80px;
-    background: rgba(0, 0, 0, 1);
+    width: 80px;
+    height: 80px;
+    background: #e12d6f;
     padding: 10px;
     position: relative;
     left: 50%;
     margin-top: -40px;
     margin-left: -45px;
     text-align: center;
-    border-radius: 5px;
-    border: 2px solid #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
 }
 .services-inner .our-services-img img{
-    max-width: 48px;
-    max-height: 48px;
+    max-width: 42px;
+    max-height: 42px;
 }
 .services-inner .our-services-text {
     overflow: hidden;
@@ -1028,7 +1090,7 @@ h2.heading {
   margin-bottom: 0;
   line-height: 24px;
   font-size: 14px;
-  color: #fff;
+  color: #ccc;
 }
 .services-inner .services p {
   font-size: 14px;
@@ -1799,7 +1861,9 @@ h2.heading {
 .team-grid{
   box-shadow: 1px 1px 5px 1px rgba(90, 122, 190, 0.2);
 }
-.team-grid img{max-height: 300px;}
+.team-grid img{
+    max-height: 300px;
+}
 .team-grid h5{
   font-size: 18px;
   font-weight: 700;
@@ -2044,6 +2108,10 @@ p.para-text-w3ls {
 /*-- //stats --*/
 
 /*-- other services --*/
+.other-services .btn-box .btn{
+    max-width: 300px;
+    margin: 0 0 50px;
+}
 .owl-carousel.owl-loaded{
   position: relative;
 }

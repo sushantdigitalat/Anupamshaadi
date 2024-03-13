@@ -6,7 +6,7 @@ function active_course() {
         items: 3,
         nav: true,
         autoplay: 5000,
-        smartSpeed: 2500,
+        smartSpeed: 3000,
         dots: true,
         responsiveClass: true,
         thumbs: true,
