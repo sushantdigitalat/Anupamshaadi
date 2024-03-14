@@ -2216,12 +2216,32 @@ p.para-text-w3ls {
   background-color: #ec7b1d;
   font-weight: 700;
 }
+.btn-orange-outline{
+    color: #ec7b1d;
+    border-color: #ec7b1d;
+    border-radius: 0;
+    background-color: #fff;
+    font-weight: 700;
+  }
+  .btn-orange-outline:hover,
+  .btn-orange-outline:focus,
+  .btn-orange-outline:active 
+  .btn-orange-outline:not(:disabled):not(.disabled):active,
+  .btn-orange-outline:not(:disabled):not(.disabled):active:focus{
+    background-color: #ec7b1d;
+    border-color: #ec7b1d;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(236, 123, 29, 0.5);
+  }
 .btn-orange:hover,
 .btn-orange:active,
-.btn-orange:focus {
+.btn-orange:focus,
+.btn-orange:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):active:focus {
   background-color: #fff;
   border-color: #ec7b1d;
   color: #ec7b1d;
+  box-shadow: 0 0 0 0.2rem rgba(236, 123, 29, 0.5);
 }
 .btn-white:hover,
 .btn-white:active,
@@ -3274,4 +3294,13 @@ a.move-top span {
 
 .collapsible-link[aria-expanded='true']::before {
   transform: rotate(180deg);
+}
+
+
+/** modal **/
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
