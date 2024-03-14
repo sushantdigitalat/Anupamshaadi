@@ -1306,7 +1306,12 @@ h2.heading {
   transform: rotate(45deg);
 }
 
-.about-us, .subscribe, .team, .how-it-works, .other-services{
+.about-us, 
+.subscribe, 
+.team, 
+.how-it-works, 
+.other-services, 
+.faq-section {
   position: relative;
   background-color: #fafafa;
   overflow: hidden;
@@ -1332,7 +1337,8 @@ h2.heading {
 .our-partner .layer, 
 .how-it-works .layer,
 .subscribe .layer{
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(7px);
 }
 .our-partner .layer h3.heading,
 .how-it-works .layer h3.heading,
@@ -3151,18 +3157,18 @@ a.move-top span {
   right: 0;
   background: black;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8183648459) 0%, rgba(0, 0, 0, 0) 100%);
-  opacity: 0.6;
+  opacity: 0.75;
   transition: all 0.5s;
 }
 .partner-events-gallery .gallery_wrapper .owl-stage-outer .owl-stage .owl-item.active {
-  width: 90px !important;
+  width: 60px !important;
   transition: width 0.5s;
 }
 .partner-events-gallery .gallery_wrapper .owl-stage-outer .owl-stage .owl-item.active.center {
-  width: 400px !important; 
+  width: 440px !important; 
 }
 .partner-events-gallery .gallery_wrapper .owl-stage-outer .owl-stage .owl-item.active.center .item {
-  height: 280px;
+  height: 300px;
 }
 .partner-events-gallery .gallery_wrapper .owl-stage-outer .owl-stage .owl-item.active.center .item img {
   width: 100%;
@@ -3230,7 +3236,12 @@ a.move-top span {
 
 /** FAQs **/
 
-*/
+.card{
+    margin: 0 0 10px;
+}
+.collapsible-link{
+    text-transform: capitalize;
+}
 /* Horizontal line */
 .collapsible-link::before {
   content: '';
