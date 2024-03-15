@@ -3312,23 +3312,54 @@ a.move-top span {
 
 
 /** modal **/
-.register-box{
-    background-color: #eee;
+.register-box, 
+.promo-img{
+    background: url(../images/event.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.register-box .layer,
+.promo-img .layer{
+    background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(7px);
+  position: relative;
+  overflow: hidden;
+}
+.promo-img .layer img{
+    position: absolute;
+    bottom: -9px;
 }
 .register-box h4{
     padding: 80px 0 0;
     text-align: center;
-    color: #333;
+    color: #fff;
     font-size: 21px;
 }
-.modal .modal-content .modal-body .promo-img {
+.why-register{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.why-register .grid{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    column-gap: 20px;
+}
+.why-register .grid h6{
+    padding: 10px 0 0;
+}
+/* .modal .modal-content .modal-body .promo-img {
     background-color: #eee;
     background-image: url('../images/sign-in.jpg');
     background-size: 400px auto;
     background-position:center bottom -10px;
     background-repeat: no-repeat;
     border-radius: 5px 0 0 5px;
-}
+} */
 .modal .modal-content .modal-body{
     padding: 0;
 }
