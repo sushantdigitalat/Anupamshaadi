@@ -45,9 +45,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="menu ml-auto mt-3">
                     <li class="py-1 mr-2"><a href="index.html">Search</a></li>
                     <li class="py-1 mr-4"><a href="#success-stories">Help</a></li>
-                    <li class=""><a href="#" class="btn btn-primary btn-orange-outline rounded">Login</a></li>
+                    <li class=""><a href="#" class="btn btn-primary btn-orange-outline rounded" data-toggle="modal"
+                            data-target="#login-modal">Login</a></li>
                     <li class=""><a class="btn btn-primary btn-pink rounded register" data-toggle="modal"
-                            data-target="#exampleModalCenter">Register</a></li>
+                            data-target="#register-modal">Register</a></li>
                 </ul>
             </nav>
             <!-- //nav -->
@@ -74,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
                             <form action="#" class="form-inline" method="post">
-                                <div class="col-lg-5"><select class="dropselect" name="profile" selected=""
+                                <!-- <div class="col-lg-5"><select class="dropselect" name="profile" selected=""
                                         tabindex="1">
                                         <option selected="" value="create">Create a Profile For</option>
                                         <option value="Male">Self</option>
@@ -91,11 +92,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                     </select>
+                                </div> -->
+                                <div class="col-lg-8">
+                                    <h5>Search from Thousands of
+                                        Marathi Profiles</h5>
                                 </div>
                                 <div class="btn-box col-md-4">
                                     <button type="button" name="submit" value="Lets's Begin"
                                         class="btn btn-primary btn-orange rounded" data-toggle="modal"
-                                        data-target="#exampleModalCenter">
+                                        data-target="#register-modal">
                                         <span class="btn-title">Register Free </span></button>
                                 </div>
                             </form>
@@ -768,7 +773,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <a href="www.anupamshaadi.com"> anupamshaadi.com.</a>
                     </p>
                 </div>
-                <div class="col-lg-12 text-center py-4">
+                <div class="col-lg-12 text-center pt-3">
                     <p>www.anupamshaadi.com is not affiliated to Shaadi.com</p>
                     <p> Need Help? Call On +91-8378910999, +91-8275016501</p>
                 </div>
@@ -785,36 +790,142 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- move top -->
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- Login Modal -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content rounded-0">
-                <div class="modal-body py-0">
-
-
-                    <div class="d-flex main-content">
-                        <div class="bg-image promo-img mr-3"
-                            style="background-image: url('assets/images/sign-in.jpg');">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="main-content">
+                        <div class="bg-image promo-img">
                         </div>
                         <div class="content-text p-4">
-                            <h3>Sign In</h3>
-
+                            <button type="button" class="btn-close" aria-label="Close" data-dismiss="modal">
+                                <i class="fa fa-times"></i>
+                            </button>
+                            <h3 class="mb-3">Login</h3>
                             <form action="#">
                                 <div class="form-group">
                                     <label for="email">Email Address / Mobile No.</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <input type="email" placeholder="Enter Email Address / Mobile No." class="form-control" id="email">
                                 </div>
                                 <div class="form-group">
                                     <label for="name">Password</label>
-                                    <input type="password" class="form-control" id="name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" value="Sign In" class="btn btn-primary btn-block">
-                                </div>
-                                <div class="form-group ">
-                                    <p class="custom-note"><small>By signing up you will agree to our <a
-                                                href="#">Privacy Policy</a></small></p>
+                                    <input type="password" placeholder="Enter Password" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-login">
+                                            <div class="checkboxOverride">
+                                                <input type="checkbox" name="" id="checkboxInputOverride" value="1">
+                                                <label for="checkboxInputOverride">Stay Logged in</label>
+                                            </div>
+                                            <div class="forgot-password">
+                                                <a href="#">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-orange rounded btn-block">Login</button>
+                                    </div>
+                                    <div class="form-group register-here">
+                                        <h4>New to AnupamShaadi.com? <a href="#">Register Free</a></h4>
+                                    </div>
+                                    </form>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <!-- Register Modal -->
+                                    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div class="main-content register">
+                                                        <div class="register-box p-4">
+                                                            <h4 class="mb-3">Why Register?</h4>
+                                                            <img src="assets/images/why-register.jpg" alt="why register" class="register-img">
+                                                        </div>
+                                                        <div class="content-text p-4">
+                                                            <button type="button" class="btn-close" aria-label="Close" data-dismiss="modal">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
+                                                            <h4 class="mb-3">Welcome! Let's start</h4>
+                                    
+                                                            <form action="#">
+                                                                <div class="form-group row">
+                                                                    <div class="col-lg-6">
+                                                                        <label for="create">Create a Profile For <span>*</span></label>
+                                                                        <select class="dropselect" name="profile" selected="" tabindex="1">
+                                                                            <option selected="" value="create">Please Select</option>
+                                                                            <option value="Male">Self</option>
+                                                                            <option value="Female">Son</option>
+                                                                            <option value="Daughter">Daughter</option>
+                                                                            <option value="Brother">Brother</option>
+                                                                            <option value="Sister">Sister</option>
+                                                                            <option value="Relative">Relative / Friend</option>
+                                                                            <option value="Client">Client Marriage Bureau</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-lg-6 pl-0">
+                                                                        <label for="gender">Select Gender <span>*</span></label>
+                                                                        <select class="dropselect" name="gender" selected="" tabindex="1">
+                                                                            <option value="select" selected="">Please Select</option>
+                                                                            <option value="Male">Male</option>
+                                                                            <option value="Female">Female</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group" style="display: none;">
+                                    
+                                                                    <div class="gender-box">
+                                                                        <div class="radio-button">
+                                                                            <input id="female" name="radio" type="radio">
+                                                                            <label for="female" class="radio-label">Female</label>
+                                                                        </div>
+                                                                        <div class="radio-button">
+                                                                            <input id="male" name="radio" type="radio">
+                                                                            <label for="male" class="radio-label">Male</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="name">Name <span>*</span></label>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-6">
+                                                                            <input type="text" placeholder="First Name" class="form-control" id="fname">
+                                                                        </div>
+                                                                        <div class="col-lg-6 pl-0">
+                                                                            <input type="text" placeholder="Last Name" class="form-control" id="lname">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <div class="col-lg-6">
+                                                                        <label for="email">Email Address <span>*</span></label>
+                                                                        <input type="email" placeholder="Enter Email Address" class="form-control"
+                                                                            id="email">
+                                                                    </div>
+                                                                    <div class="col-lg-6 pl-0">
+                                                                        <label for="email"> Mobile No. <span>*</span></label>
+                                                                        <input type="email" placeholder="Enter Mobile No." class="form-control" id="email">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="name">Create New Password <span>*</span></label>
+                                                                    <input type="password" placeholder="Enter Password" class="form-control" id="password">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="form-login">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-orange rounded btn-block">Register NOW</button>
+                                            </div>
+                                        <div class="form-group register-here">
+                                            <h4>Already a member? Please <a href="#">Click Here </a></h4>
                                 </div>
                             </form>
                         </div>

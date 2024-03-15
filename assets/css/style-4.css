@@ -78,7 +78,7 @@ ul {
 header {
   width: 100%;
   padding: 0;
-  z-index: 9999;
+  z-index: 999;
   position: absolute;
   -webkit-transition: all 0.5s ease;
   -moz-transition: position 10s;
@@ -471,10 +471,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 .form-inline .form-group{padding-right: 0;}
 .dropselect{
     border-radius: 5px;
-  border: 1px solid #999;
+  border: 1px solid #ced4da;
   background-color: #fff;
   margin: 0;
-  color: #000;
   cursor: pointer;
   position: relative;
   padding-left: 15px;
@@ -494,9 +493,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
   display: block;
   text-indent: 0.01px;
   transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0;
-  font-weight: 700;
+  padding: 10px 15px;
 }
-.dropselect:hover, .dropselect:focus, .dropselect:active{border-color: #ec7b1d;}
+.dropselect:focus, 
+.dropselect:active{
+    border-color: #ec7b1d;
+    box-shadow: 0 0 0 0.2rem rgba(236, 123, 29, 0.5);
+}
 
 .form-inline label{color: #000;margin-bottom: 10px;}
 .banner-form-w3 .padding {
@@ -937,13 +940,15 @@ h2.heading {
   position: relative;
   border: 1px solid #ec7b1d;
 }
-.btn-box .btn:hover, .btn-box .btn:focus, .btn-box .btn:active {
+.btn-box .btn-orange:hover, 
+.btn-box .btn-orange:focus, 
+.btn-box .btn-orange:active, 
+.btn-box .btn-orange:not(:disabled):not(.disabled):active, 
+.btn-box .btn-orange:not(:disabled):not(.disabled):active:focus{
   text-indent: -20px;
   background-color: #ec7b1d;color: #fff;
   border-color: #ec7b1d;
 }
-
-
 .btn-box .btn:before {
   content: "";
   font-family: FontAwesome;
@@ -959,7 +964,12 @@ h2.heading {
   width: 40px;
   transition: all 0.2s linear 0s;
 }
-.btn-box .btn:hover:before {
+.btn-box .btn-orange:hover:before, 
+.btn-box .btn-orange:focus::before, 
+.btn-box .btn-orange:active::before, 
+.btn-box .btn-orange:not(:disabled):not(.disabled):active::before, 
+.btn-box .btn-orange:not(:disabled):not(.disabled):active:focus::before
+{
   opacity: 1;
   text-indent: -40px;
 }
@@ -1336,7 +1346,8 @@ h2.heading {
 }
 .our-partner .layer, 
 .how-it-works .layer,
-.subscribe .layer{
+.subscribe .layer, 
+.footer-layer{
   background-color: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(7px);
 }
@@ -2195,7 +2206,8 @@ p.para-text-w3ls {
   background-color: #e12d6f;
   color: #fff;
 }
-.btn-pink {
+.btn-pink, 
+a.btn-pink:not([href]):not([tabindex]) {
   color: #fff;
   border-color: #e12d6f;
   border-radius: 0;
@@ -2204,10 +2216,16 @@ p.para-text-w3ls {
 }
 .btn-pink:hover,
 .btn-pink:active,
-.btn-pink:focus {
+.btn-pink:focus,
+.btn-pink:not(:disabled):not(.disabled):active,
+.btn-pink:not(:disabled):not(.disabled):active:focus,
+a.btn-pink:not([href]):not([tabindex]):hover,
+a.btn-pink:not([href]):not([tabindex]):focus,
+a.btn-pink:not([href]):not([tabindex]):active {
   background-color: #fff;
   border-color: #e12d6f;
   color: #e12d6f;
+  box-shadow: 0 0 0 0.2rem rgba(236, 123, 29, 0.5);
 }
 .btn-orange {
   color: #fff;
@@ -2237,7 +2255,7 @@ p.para-text-w3ls {
 .btn-orange:active,
 .btn-orange:focus,
 .btn-orange:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled):active:focus {
+.btn-orange:not(:disabled):not(.disabled):active:focus {
   background-color: #fff;
   border-color: #ec7b1d;
   color: #ec7b1d;
@@ -2299,16 +2317,12 @@ subscribe form {
 }
 
 footer {
-  background: url(../images/footer.jpg) no-repeat center;
+  background: url(../images/event.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
-}
-
-.footer-layer {
-  background: rgba(0, 0, 0, 0.9);
 }
 .footer-ul li{list-style: none;padding-bottom:20px;}
 .footer-ul li a{color: #fff;}
@@ -3298,9 +3312,190 @@ a.move-top span {
 
 
 /** modal **/
-
-.bg-image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.register-box{
+    background-color: #eee;
 }
+.register-box h4{
+    padding: 80px 0 0;
+    text-align: center;
+    color: #333;
+    font-size: 21px;
+}
+.modal .modal-content .modal-body .promo-img {
+    background-color: #eee;
+    background-image: url('../images/sign-in.jpg');
+    background-size: 400px auto;
+    background-position:center bottom -10px;
+    background-repeat: no-repeat;
+    border-radius: 5px 0 0 5px;
+}
+.modal .modal-content .modal-body{
+    padding: 0;
+}
+.modal .modal-content .modal-body .form-control::placeholder{
+    font-size: 12px;
+    color: #ccc;
+}
+.modal .modal-content .modal-body .main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.modal .modal-content .modal-body .main-content.register{
+    grid-template-columns: 40% 60%;
+}
+.modal .modal-content .modal-body .main-content .btn-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #ccc ;
+    font-weight: normal;
+}
+.form-login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+}
+.forgot-password{
+    justify-self: right;
+}
+.forgot-password a, 
+.register-here h4 a{
+    font-size: 13px;
+    color: #ec7b1d;
+}
+.register-here h4{
+    font-size: 14px;
+}
+.modal .modal-content .modal-body .btn-orange{
+    padding: 10px;
+    position: relative;
+    transition: all 0.2s linear 0s;
+}
+.modal .modal-content .modal-body .btn-orange:hover, 
+.modal .modal-content .modal-body .btn-orange:focus, 
+.modal .modal-content .modal-body .btn-orange:active, 
+.modal .modal-content .modal-body .btn-orange:not(:disabled):not(.disabled):active, 
+.modal .modal-content .modal-body .btn-orange:not(:disabled):not(.disabled):active:focus{
+  background-color: #fff;
+  color: #ec7b1d;
+  border-color: #ec7b1d;
+}
+.modal .modal-content .modal-body .form-control:focus{
+    box-shadow: 0 0 0 0.2rem rgba(236, 123, 29, 0.5);
+    border-color: #ec7b1d;
+}
+/* .modal .modal-content .modal-body .btn-orange:before {
+    content: "";
+    font-family: FontAwesome;
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 200px;
+    transition: all 0.2s linear 0s;
+  }
+  .modal .modal-content .modal-body .btn-orange:hover:before, 
+  .modal .modal-content .modal-body .btn-orange:focus::before, 
+  .modal .modal-content .modal-body .btn-orange:active::before, 
+  .modal .modal-content .modal-body .btn-orange:not(:disabled):not(.disabled):active::before, 
+  .modal .modal-content .modal-body .btn-orange:not(:disabled):not(.disabled):active:focus::before
+  {
+    opacity: 1;
+    text-indent: -80px;
+  } */
+/** checkbox **/
+.checkboxOverride input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+  }
+  .checkboxOverride {
+    margin: 0 0 10px;
+    position: relative;
+    width: auto;
+  }
+  .checkboxOverride input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+  .checkboxOverride label{
+    position: relative;
+    width: auto;
+    cursor: pointer;
+    padding: 0 0 0 30px;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .checkboxOverride label::before {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    content: "";
+  }
+  .checkboxOverride label:after {
+    border-style: none none solid solid;
+    content: "";
+    height: 6px;
+    left: 6px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    -ms-transform:rotate(-45deg); /* IE 9 */
+    -webkit-transform:rotate(-45deg); /* Safari and Chrome */
+    transform:rotate(-45deg);
+    width: 10px;
+  }
+
+  /** radio button **/
+  .gender-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .gender-box .radio-button label{
+    cursor: pointer;
+    line-height: 24px;
+    margin: 0;
+  }
+  .gender-box .radio-button{
+    margin: 0;
+  }
+  .gender-box .radio-button input[type=radio] {
+    position: absolute;
+    opacity: 0;
+  }
+  .gender-box .radio-button input[type=radio] + .radio-label:before {
+    content: "";
+    background: #eee;
+    border-radius: 100%;
+    border: 1px solid #b4b4b4;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    margin-right: 1em;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+  }
+  .gender-box .radio-button input[type=radio]:checked + .radio-label:before {
+    background-color: #666;
+    box-shadow: inset 0 0 0 4px #f4f4f4;
+  }
+  .gender-box .radio-button input[type=radio]:focus + .radio-label:before {
+    outline: none;
+    border-color: #666;
+  }
