@@ -973,6 +973,18 @@ h2.heading {
   opacity: 1;
   text-indent: -40px;
 }
+.other-services .btn-box .btn{
+    border-color: #e12d6f;
+}
+.other-services .btn-box .btn:hover, 
+.other-services .btn-box .btn:focus, 
+.other-services .btn-box .btn:active, 
+.other-services .btn-box .btn:not(:disabled):not(.disabled):active, 
+.other-services .btn-box .btn:not(:disabled):not(.disabled):active:focus{
+  color: #e12d6f;
+  border-color: #e12d6f;
+  box-shadow: 0 0 0 0.2rem rgba(225, 45, 111, 0.5);
+}
 .anim-icons.full-width {
   max-width: 100%;
 }
@@ -3404,9 +3416,11 @@ a.move-top span {
     justify-self: right;
 }
 .forgot-password a, 
-.register-here h4 a{
+.register-here h4 a,
+.register-here h4 a:not([href]):not([tabindex]){
     font-size: 13px;
     color: #ec7b1d;
+    cursor: pointer;
 }
 .register-here h4{
     font-size: 14px;
