@@ -1219,6 +1219,9 @@ h2.heading {
     opacity: 0.2;
     margin-left: -110px;
   }
+  .faq-section .pink-rings{
+    top: 125px;
+  }
 .circle{
   top: -15%;
   left: -10%;
@@ -3321,6 +3324,7 @@ a.move-top span {
     -ms-background-size: cover;
     background-size: cover;
     background-position: center;
+    border-radius: 5px 0 0 5px;
 }
 .register-box .layer,
 .promo-img .layer{
@@ -3328,6 +3332,7 @@ a.move-top span {
   backdrop-filter: blur(7px);
   position: relative;
   overflow: hidden;
+  border-radius: 5px 0 0 5px;
 }
 .promo-img .layer img{
     position: absolute;
