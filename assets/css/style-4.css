@@ -1221,6 +1221,11 @@ h2.heading {
   }
   .faq-section .pink-rings{
     top: 125px;
+    margin-left: -140px;
+  }
+  .about-us .pink-rings{
+    top: 120px;
+    margin-left: -120px;
   }
 .circle{
   top: -15%;
