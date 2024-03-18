@@ -460,12 +460,13 @@ input.error {
 
 @media screen and (max-width: 1024px) {
   .container {
-    width: calc(100% - 40px);
+    /* width: calc(100% - 40px); */
     max-width: 100%; }
 
-  .vertical .steps, .vertical .content, .vertical .actions {
-    float: none;
-    width: 100%; }
+  .vertical {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
 
   #find_bank {
     width: 100%; }
@@ -474,8 +475,7 @@ input.error {
     width: 190px;
     height: 120px; } }
 @media screen and (max-width: 992px) {
-  .content {
-    height: 900px; }
+  
 
   .form-radio-flex input + label {
     width: 100px;
@@ -496,11 +496,13 @@ input.error {
     padding: 0px; }
 
   fieldset, .actions ul {
-    padding-left: 30px;
-    padding-right: 30px; }
+    padding-left: 20px;
+    padding-right: 20px; }
 
   #slider-margin .noUi-pips {
-    width: 94%; } }
+    width: 94%; } 
+    
+  }
 @media screen and (max-width: 480px) {
   .form-date-group, .form-find {
     flex-direction: column;
@@ -508,9 +510,6 @@ input.error {
     -webkit-flex-direction: column;
     -o-flex-direction: column;
     -ms-flex-direction: column; }
-
-  .content {
-    height: 1050px; }
 
   #find_bank {
     margin-bottom: 20px; }
@@ -526,7 +525,14 @@ input.error {
 
   .form-radio-flex input + label {
     width: 90px;
-    height: 61px; } }
+    height: 61px; } 
+    .status-grid{
+      grid-auto-flow: row;
+    }
+    .form-flex{
+      width: 100%;
+    }
+  }
 
 
 
