@@ -407,12 +407,12 @@ li > a:only-child:after {
 .banner {
   background-image: url(../images/banner-3.jpg);
   background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: 100%;
+  background-position: center center;
+  background-size: cover;
   /* margin-bottom: -305px; */
   position: relative;
 }
-.banner .layer {
+.banner .layer{
     /* background: rgb(225,45,111);
 background: -moz-linear-gradient(90deg, rgba(225,45,111,0.65) 0%, rgba(180,180,180,0) 65%, rgba(255,255,255,0) 78%, rgba(236,123,29,0.65) 100%);
 background: -webkit-linear-gradient(90deg, rgba(225,45,111,0.65) 0%, rgba(180,180,180,0) 65%, rgba(255,255,255,0) 78%, rgba(236,123,29,0.65) 100%);
@@ -423,6 +423,26 @@ background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.search-banner .layer{
+  background: rgb(0,0,0);
+background: -moz-linear-gradient(180deg, rgba(0,0,0,0) -30%, rgba(0,0,0,0.9) 100%);
+background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) -30%, rgba(0,0,0,0.9) 100%);
+background: linear-gradient(180deg, rgba(0,0,0,0) -30%, rgba(0,0,0,0.9) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+backdrop-filter: blur(1px);
+}
+.search-banner {
+  background-image: url(../images/search-banner2.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  /* margin-bottom: -305px; */
+  position: relative;
+  /* backdrop-filter: blur(1px); */
+}
+.search-pd{
+  padding: 160px 0 20px;
 }
 .banner-image{
   background-image: url(../images/slider-1.png);
@@ -1407,21 +1427,21 @@ h2.heading {
     border-radius: 50%;
     display: grid;
     place-content: center;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     color: #fff;
     margin-bottom: 10px;
 }
 .members-icons i{
-    font-size: 27px;
+    font-size: 30px;
 }
 .membership-box h6{
     font-size: 18px;
     font-weight: 700;
-    padding: 10px 0 14px;
+    padding: 15px 0 20px;
     text-transform: capitalize;
     position: relative;
-    margin: 0 0 12px;
+    margin: 0 0 20px;
 }
 .membership-box h6::after{
     position: absolute;
@@ -1435,7 +1455,7 @@ h2.heading {
 }
 .membership-box p{
     letter-spacing: 0;
-    line-height: 21px;
+    line-height: 24px;
     width: 80%;
 }
 
@@ -2134,6 +2154,17 @@ p.para-text-w3ls {
 .other-services .btn-box .btn{
     max-width: 300px;
     margin: 0 0 50px;
+    border-color: #e12d6f;
+}
+.other-services .btn-box .btn-pink:hover, 
+.other-services .btn-box .btn-pink:active, 
+.other-services .btn-box .btn-pink:focus, 
+.other-services .btn-box .btn-pink:not(:disabled):not(.disabled):active, 
+.other-services .btn-box .btn-pink:not(:disabled):not(.disabled):active:focus, 
+.other-services .btn-box a.btn-pink:not([href]):not([tabindex]):hover, 
+.other-services .btn-box a.btn-pink:not([href]):not([tabindex]):focus, 
+.other-services .btn-box a.btn-pink:not([href]):not([tabindex]):active{
+  box-shadow: 0 0 0 0.2rem rgba(225, 45, 111, 0.5);
 }
 .owl-carousel.owl-loaded{
   position: relative;
@@ -3394,9 +3425,11 @@ a.move-top span {
     justify-self: right;
 }
 .forgot-password a, 
-.register-here h4 a{
+.register-here h4 a,
+.register-here h4 a:not([href]):not([tabindex]){
     font-size: 13px;
     color: #ec7b1d;
+    cursor: pointer;
 }
 .register-here h4{
     font-size: 14px;
