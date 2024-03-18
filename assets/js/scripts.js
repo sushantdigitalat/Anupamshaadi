@@ -158,3 +158,48 @@ $(document).ready(function () {
       } 
   }); 
 });
+
+
+$("#caste").multiselect({
+  columns: 1,
+  texts: {
+    placeholder: "Select",
+    search: "Search",
+  },
+  search: true,
+  selectAll: true,
+});
+
+$("#education").multiselect({
+  columns: 1,
+  texts: {
+    placeholder: "Select",
+    search: "Search",
+  },
+  search: true,
+  selectAll: true,
+});
+
+$("#city").multiselect({
+  columns: 1,
+  texts: {
+    placeholder: "Select",
+    search: "Search",
+  },
+  search: true,
+  selectAll: true,
+});
+
+$(".second a").click(function () {
+  $("#steps-uid-0-p-0").removeClass("current");
+  $("#steps-uid-0-p-1").addClass("current");
+  $(".first").removeClass("current");
+  $(".second").addClass("current");
+});
+
+$(".first a").click(function () {
+  $("#steps-uid-0-p-1").removeClass("current");
+  $("#steps-uid-0-p-0").addClass("current");
+  $(".second").removeClass("current");
+  $(".first").addClass("current");
+});

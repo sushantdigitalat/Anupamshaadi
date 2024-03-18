@@ -407,7 +407,7 @@ li > a:only-child:after {
 .banner {
   background-image: url(../images/banner-3.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 0;
   background-size: cover;
   /* margin-bottom: -305px; */
   position: relative;
@@ -426,23 +426,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 }
 .search-banner .layer{
   background: rgb(0,0,0);
-background: -moz-linear-gradient(180deg, rgba(0,0,0,0) -30%, rgba(0,0,0,0.9) 100%);
-background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) -30%, rgba(0,0,0,0.9) 100%);
-background: linear-gradient(180deg, rgba(0,0,0,0) -30%, rgba(0,0,0,0.9) 100%);
+background: -moz-linear-gradient(180deg, rgba(0,0,0,0) -50%, rgba(0,0,0,0.9) 100%);
+background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) -50%, rgba(0,0,0,0.9) 100%);
+background: linear-gradient(180deg, rgba(0,0,0,0) -50%, rgba(0,0,0,0.9) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 backdrop-filter: blur(1px);
 }
 .search-banner {
   background-image: url(../images/search-banner2.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-repeat: repeat;
+  background-position: center 0;
   background-size: cover;
   /* margin-bottom: -305px; */
   position: relative;
   /* backdrop-filter: blur(1px); */
 }
 .search-pd{
-  padding: 160px 0 20px;
+  padding: 220px 0 40px;
 }
 .banner-image{
   background-image: url(../images/slider-1.png);
@@ -508,19 +508,21 @@ backdrop-filter: blur(1px);
   -moz-appearance: none;
   -webkit-appearance: none;
   -o-appearance: none;
-  background: url(../images/select-box.jpg) no-repeat scroll 94% center #fff;
+  background: url(../images/select-box.jpg) no-repeat scroll right 15px center #fff;
   background-size: 12px 7px; 
   display: block;
   text-indent: 0.01px;
   transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0;
-  padding: 10px 15px;
 }
 .dropselect:focus, 
 .dropselect:active{
     border-color: #ec7b1d;
     box-shadow: 0 0 0 0.2rem rgba(236, 123, 29, 0.5);
 }
-
+.form-control:focus{
+  border-color: #ec7b1d;
+  box-shadow: 0 0 0 0.2rem rgba(236, 123, 29, 0.5);
+}
 .form-inline label{color: #000;margin-bottom: 10px;}
 .banner-form-w3 .padding {
   background-color: rgba(0, 0, 0,0.5);
@@ -951,7 +953,7 @@ h2.heading {
   font-size: 18px;
 }
 .btn-box .btn {
-  padding: 12px 20px;
+  padding: 15px 20px;
   border-radius: 5px;
   margin: 0;
   font-weight: 700;
@@ -1015,7 +1017,7 @@ h2.heading {
 .services {
   position: relative;
   padding-top: 160px!important;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
 }
 .mb-60 {
   margin-bottom: 60px;
@@ -1343,7 +1345,7 @@ h2.heading {
 .other-services, 
 .faq-section {
   position: relative;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   overflow: hidden;
 }
 .trusted-box{
@@ -1753,7 +1755,7 @@ h2.heading {
 }
 
 .comparison-table .pricing-feature li:nth-child(2n + 1) {
-  background: #fafafa;
+  background: #f8f8f8;
 }
 
 .list-feature {
@@ -2048,7 +2050,7 @@ h3.heading {
   font-weight: 700;
 }
 .stats-section-w3pvt {
-  background: #fafafa;
+  background: #f8f8f8;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2258,7 +2260,8 @@ a.btn-pink:not([href]):not([tabindex]):active {
   color: #e12d6f;
   box-shadow: 0 0 0 0.2rem rgba(236, 123, 29, 0.5);
 }
-.btn-orange {
+.btn-orange, 
+a.btn-orange:not([href]):not([tabindex]) {
   color: #fff;
   border-color: #ec7b1d;
   border-radius: 0;
@@ -3394,7 +3397,8 @@ a.move-top span {
 .modal .modal-content .modal-body{
     padding: 0;
 }
-.modal .modal-content .modal-body .form-control::placeholder{
+.modal .modal-content .modal-body .form-control::placeholder,
+.form-control::placeholder{
     font-size: 12px;
     color: #ccc;
 }
@@ -3526,6 +3530,7 @@ a.move-top span {
   .gender-box{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 80%;
   }
   .gender-box .radio-button label{
     cursor: pointer;
@@ -3534,6 +3539,7 @@ a.move-top span {
   }
   .gender-box .radio-button{
     margin: 0;
+    cursor: pointer;
   }
   .gender-box .radio-button input[type=radio] {
     position: absolute;

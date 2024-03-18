@@ -16,10 +16,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- css files -->
     <link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
     <link href="assets/css/style-4.css" rel='stylesheet' type='text/css' /><!-- custom css -->
-    <link href="assets/css/css_slider.css" type="text/css" rel="stylesheet" media="all">
+    <link href="assets/css/search.css" type="text/css" rel="stylesheet" media="all">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 
     <!-- //css files -->
 
@@ -58,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
     <!-- banner -->
-    <div class="search-banner" id="home">
+    <div class="search-banner">
         <div class="banner-image"></div>
         <div class="layer">
             <div class="container">
@@ -76,6 +74,157 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!-- //banner -->
+
+    <section class="search-section">
+        <div class="container">
+            
+                <form method="POST" id="search-form" class="signup-form" action="#" novalidate="novalidate">
+                    <div role="application" class="wizard clearfix vertical" id="steps-uid-0"><div class="steps clearfix"><ul role="tablist"><li role="tab" class="first current" aria-disabled="false" aria-selected="true"><a id="steps-uid-0-t-0" href="#steps-uid-0-h-0" aria-controls="steps-uid-0-p-0"><span class="current-info audible"> </span><div class="title"><span class="step-number">1</span><span class="step-text">Regular Search</span></div></a></li><li role="tab" aria-disabled="false" class="second done" aria-selected="false"><a id="steps-uid-0-t-1" href="#steps-uid-0-h-1" aria-controls="steps-uid-0-p-1"><div class="title"><span class="step-number">2</span><span class="step-text">Search by Profile ID</span></div></a></li></ul></div><div class="content clearfix">
+
+                    <fieldset id="steps-uid-0-p-0" role="tabpanel" aria-labelledby="steps-uid-0-h-0" class="tab-body current" aria-hidden="false" style="">
+                    <div class="fieldset-content">
+                    <div class="form-group">
+                    <label class="form-label">Gender</label>
+                    <div class="form-flex">
+                    <div class="form-group">
+                        <div class="gender-box">
+                            <div class="radio-button">
+                                <input id="male" name="radio" type="radio">
+                                <label for="male" class="radio-label">Male</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="gender-box">
+                            <div class="radio-button">
+                                <input id="female" name="radio" type="radio">
+                                <label for="female" class="radio-label">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="age" class="form-label">Age</label>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <select class="dropselect" name="agefrm" id="agefrm">
+								<option value="">Select</option><option value="18" selected="selected">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option><option value="71">71</option>							</select>
+                        </div>
+                        <div class="col-lg-1 text-center-all">to</div>
+                        <div class="col-lg-3">
+                            <select class="dropselect" name="agefrm" id="agefrm">
+								<option value="">Select</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30" selected="selected">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option><option value="71">71</option>							</select>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="Status" class="form-label">Marital Status</label>
+                    <div class="status-grid">
+                        <div class="">
+                        <div class="checkboxOverride">
+                            <input type="checkbox" name="" id="all" value="1">
+                            <label for="all">All</label>
+                        </div></div>
+                        <div class="">
+                            <div class="checkboxOverride">
+                                <input type="checkbox" name="" id="unmarried" value="1">
+                                <label for="unmarried">Unmarried</label>
+                            </div></div>
+                            <div class="">
+                                <div class="checkboxOverride">
+                                    <input type="checkbox" name="" id="divorcee" value="1">
+                                    <label for="divorcee">Divorcee</label>
+                                </div></div>
+                                <div class="">
+                                    <div class="checkboxOverride">
+                                        <input type="checkbox" name="" id="separated" value="1">
+                                        <label for="separated">Separated</label>
+                                    </div></div>
+                                    <div class="">
+                                        <div class="checkboxOverride">
+                                            <input type="checkbox" name="" id="widowed" value="1">
+                                            <label for="widowed">Widowed</label>
+                                        </div></div>
+                                        <div class="">
+                                            <div class="checkboxOverride">
+                                                <input type="checkbox" name="" id="awaiting" value="1">
+                                                <label for="awaiting">Awaiting Divorce</label>
+                                            </div></div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="birth_date" class="form-label">Religion</label>
+                    <select class="dropselect" name="religionid">
+                        <option value="">Select</option><option value="0">Any</option><option value="1" selected="selected">Hindu</option><option value="3">Muslim</option><option value="4">Sikh</option><option value="5">Jain</option><option value="7">Buddhist</option><option value="30">Christian</option><option value="31">Parsi</option><option value="32">Jewish</option><option value="33">Spiritual</option><option value="34">No Religion</option><option value="35">Other</option><option value="38">Telgu</option><option value="39">Catholic</option><option value="40">Kannad</option>						</select>
+                    </div>
+                    <div class="form-group">
+                    <label for="" class="form-label">Caste</label>
+                    <select name="langOpt3[]" multiple id="caste">
+                        <option value="any">Any</option>
+                        <option value="Niyogi">6000 Niyogi</option>
+                        <option value="96k">96k maratha</option>
+                        <option value="aryav">Aaryavaishya</option>
+                        <option value="adi">Adi Andhra</option>
+                        <option value="adi2">Adi Dravida</option>
+                        <option value="adi3">Adi Karnataka</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Education</label>
+                        <select name="langOpt3[]" multiple id="education">
+                            <option value="any">Any</option>
+                            <option value="Niyogi">Graduate</option>
+                            <option value="96k">Bachelors</option>
+                            <option value="aryav">Doctorate</option>
+                            <option value="adi">Diploma</option>
+                            <option value="adi2">Under Graduate</option>
+                            <option value="adi3">Associate Degree</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">City</label>
+                            <select name="langOpt3[]" multiple id="city">
+                                <option value="any">Any</option>
+                                <option value="Niyogi">Mumbai</option>
+                                <option value="96k">Navi Mumbai</option>
+                                <option value="aryav">Pune</option>
+                                <option value="adi">Nashik</option>
+                                <option value="adi2">Nagpur</option>
+                            </select>
+                            </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Annual Income(INR)</label>
+                            <select class="dropselect" name="annualincome">
+                                <option value="">Select</option><option value="No Income">No Income</option><option value="Under 50000">Under 50000</option><option value="Rs.50,001 - 1,00,000">Rs.50,001 - 1,00,000</option><option value="Rs.1,00,001 - 2,00,000">Rs.1,00,001 - 2,00,000</option><option value="Rs.2,00,001 -   3,00,000">Rs.2,00,001 -   3,00,000</option><option value="Rs.3,00,001 - 4,00,000">Rs.3,00,001 - 4,00,000</option><option value="Rs.4,00,001 - 5,00,000">Rs.4,00,001 - 5,00,000</option><option value="Rs.5,00,001 - 7,50,000">Rs.5,00,001 - 7,50,000</option><option value="Rs.7,50,001 - 10,00,000">Rs.7,50,001 - 10,00,000</option><option value="Rs.10,00,001 - Rs.20,00,000">Rs.10,00,001 - Rs.20,00,000</option><option value="Rs.20,00,001 - Rs.50,00,000">Rs.20,00,001 - Rs.50,00,000</option><option value="Rs.50,00,001 - Rs.1,00,00,000">Rs.50,00,001 - Rs.1,00,00,000</option><option value="Rs.1,00,00,001 and above">Rs.1,00,00,001 and above</option>						</select>
+                        </div>
+                        <div class="form-group search-button">
+                            <button type="submit" name="submit" value="Lets's Begin" class="btn btn-primary btn-orange rounded">
+                                <span class="btn-title">Search Now</span></button>
+                        </div>
+                    </div>
+                    </fieldset>
+                    <fieldset id="steps-uid-0-p-1" role="tabpanel" aria-labelledby="steps-uid-0-h-1" class="tab-body" aria-hidden="true">
+                    
+                    <div class="fieldset-content">
+                    <div class="form-group">
+                    <label for="find_profile" class="form-label">Type Profile ID</label>
+                    <div class="form-group">
+                    <input type="text" name="find_profile" id="find_profile" class="form-control" placeholder="Ex. 123456">
+                    </div>
+                    <div class="form-group search-button">
+                        <button type="submit" name="submit" value="Lets's Begin" class="btn btn-primary btn-orange rounded">
+                            <span class="btn-title">Search</span></button>
+                    </div>
+                    </div>
+                    
+                    </div>
+                    </fieldset>
+                    </div></div>
+                    </form>
+            
+        </div>
+    </section>
 
     
 
@@ -392,8 +541,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <!-- javascript -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery.multiselect.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
