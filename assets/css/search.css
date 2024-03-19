@@ -710,7 +710,7 @@ input.error {
   border-style: none none solid solid;
   content: "";
   height: 6px;
-  left: 6px;
+  left: 20px;
   opacity: 0;
   position: absolute;
   top: 6px;
@@ -720,7 +720,7 @@ input.error {
   width: 10px;
 }
 
-.ms-options-wrap > .ms-options > ul input[type="checkbox"]:checked + label:after {
+.ms-options-wrap > .ms-options > ul li.selected label:after {
   opacity: 1;
 }
 

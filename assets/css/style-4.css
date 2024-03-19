@@ -3547,14 +3547,20 @@ a.move-top span {
     cursor: pointer;
     line-height: 24px;
     margin: 0;
+    width: 100%;
+    padding: 0 0 0 30px;
   }
   .gender-box .radio-button{
     margin: 0;
     cursor: pointer;
+    position: relative;
   }
   .gender-box .radio-button input[type=radio] {
     position: absolute;
     opacity: 0;
+    cursor: pointer;
+    height: auto;
+    width: auto;
   }
   .gender-box .radio-button input[type=radio] + .radio-label:before {
     content: "";
@@ -3564,8 +3570,9 @@ a.move-top span {
     display: inline-block;
     width: 20px;
     height: 20px;
-    position: relative;
+    position: absolute;
     top: 2px;
+    left: 0;
     margin-right: 1em;
     vertical-align: top;
     cursor: pointer;

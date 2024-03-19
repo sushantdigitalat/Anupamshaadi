@@ -1,0 +1,68 @@
+.profile-listing{
+  padding: 50px 0;
+}
+.accordion-button {
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: left;
+  background-color: #f8f8f8;
+}
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.accordion-item:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.accordion-body{
+  padding: 1.15rem 1.5rem;
+}
+
+.list-unstyled .checkboxOverride{
+  margin: 0;
+}
+
+.gender-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ripple img{
+  height: 190px;
+  width: 190px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.btn-light i{
+  color: #999;
+}
+
+.view-profile-link{
+  font-size: 14px;
+  color: #e12d6f;
+  margin: 0 0 0 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.profile-name-box{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.profile-name-box .online{
+  color: green;
+}
+.profile-name-box .last-seen{
+  color: #ccc;
+  font-size: 13px;
+}
