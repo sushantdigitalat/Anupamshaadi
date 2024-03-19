@@ -513,6 +513,11 @@ backdrop-filter: blur(1px);
   display: block;
   text-indent: 0.01px;
   transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0;
+  height: 40px;
+  line-height: 21px;
+  width: 100%;
+  font-size: 13px;
+  color: #666;
 }
 .dropselect:focus, 
 .dropselect:active{
@@ -642,15 +647,14 @@ h4.b-w3ltxt {
 
 .form-style-w3layout input[type="text"],
 .form-style-w3layout input[type="email"],
-.form-style-w3layout input[type="password"],
-select {
+.form-style-w3layout input[type="password"]{
   outline: none;
   font-size: 14px;
   border: none;
   color: #666;
   background: #f1f1f1;
   letter-spacing: 0.5px;
-  padding: 14px 20px;
+  padding: 10px 20px;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 15px;
@@ -3385,6 +3389,13 @@ a.move-top span {
 }
 .why-register .grid h6{
     padding: 10px 0 0;
+    margin: auto;
+    width: 85%;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+}
+.why-register .grid h6 i{
+  font-size: 1.7em;
 }
 /* .modal .modal-content .modal-body .promo-img {
     background-color: #eee;

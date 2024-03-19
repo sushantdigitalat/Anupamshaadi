@@ -555,7 +555,7 @@ input.error {
   text-align: left;
   border: 1px solid #ced4da;
   background-color: #fff;
-  padding: 10px 15px;
+  padding: 0 0 0 15px;
   border-radius: 5px;
   margin-top: 1px;
   font-size: 14px;
@@ -564,6 +564,12 @@ input.error {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  background: url(../images/select-box.jpg) no-repeat scroll right 15px center #fff;
+  background-size: 12px 7px; 
+  height: 40px;
+  line-height: 21px;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .ms-options-wrap > button[disabled] {
@@ -572,17 +578,15 @@ input.error {
   opacity: 0.6;
 }
 
-.ms-options-wrap > button:after {
+/* .ms-options-wrap > button:after {
   content: ' ';
   height: 0;
   position: absolute;
   top: 50%;
   right: 5px;
-  width: 0;
-  border: 6px solid rgba(0, 0, 0, 0);
-  border-top-color: #999;
-  margin-top: -3px;
-}
+  background: url(../images/select-box.jpg) no-repeat scroll right 15px center #fff;
+  background-size: 12px 7px; 
+} */
 
 .ms-options-wrap.ms-has-selections > button {
   color: #333;
@@ -623,7 +627,7 @@ input.error {
 .ms-options-wrap > .ms-options .ms-selectall {
   display: inline-block;
   font-size: .9em;
-  text-transform: lowercase;
+  text-transform: capitalize;
   text-decoration: none;
 }
 .ms-options-wrap > .ms-options .ms-selectall:hover {
