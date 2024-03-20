@@ -52,113 +52,6 @@ function active_course() {
     })
   });
 
-
-  // Document is ready 
-$(document).ready(function () { 
-  
-  // Validate Username 
-  $("#usercheck").hide(); 
-  let usernameError = true; 
-  $("#usernames").keyup(function () { 
-      validateUsername(); 
-  }); 
-
-  function validateUsername() { 
-      let usernameValue = $("#usernames").val(); 
-      if (usernameValue.length == "") { 
-          $("#usercheck").show(); 
-          usernameError = false; 
-          return false; 
-      } else if (usernameValue.length < 3 || usernameValue.length > 10) { 
-          $("#usercheck").show(); 
-          $("#usercheck").html("**length of username must be between 3 and 10"); 
-          usernameError = false; 
-          return false; 
-      } else { 
-          $("#usercheck").hide(); 
-      } 
-  } 
-
-  // Validate Email 
-  const email = document.getElementById("email"); 
-  email.addEventListener("blur", () => { 
-      let regex =  
-      /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/; 
-      let s = email.value; 
-      if (regex.test(s)) { 
-          email.classList.remove("is-invalid"); 
-          emailError = true; 
-      } else { 
-          email.classList.add("is-invalid"); 
-          emailError = false; 
-      } 
-  }); 
-
-  // Validate Password 
-  $("#passcheck").hide(); 
-  let passwordError = true; 
-  $("#password").keyup(function () { 
-      validatePassword(); 
-  }); 
-  function validatePassword() { 
-      let passwordValue = $("#password").val(); 
-      if (passwordValue.length == "") { 
-          $("#passcheck").show(); 
-          passwordError = false; 
-          return false; 
-      } 
-      if (passwordValue.length < 3 || passwordValue.length > 10) { 
-          $("#passcheck").show(); 
-          $("#passcheck").html( 
-              "**length of your password must be between 3 and 10"
-          ); 
-          $("#passcheck").css("color", "red"); 
-          passwordError = false; 
-          return false; 
-      } else { 
-          $("#passcheck").hide(); 
-      } 
-  } 
-
-  // Validate Confirm Password 
-  $("#conpasscheck").hide(); 
-  let confirmPasswordError = true; 
-  $("#conpassword").keyup(function () { 
-      validateConfirmPassword(); 
-  }); 
-  function validateConfirmPassword() { 
-      let confirmPasswordValue = $("#conpassword").val(); 
-      let passwordValue = $("#password").val(); 
-      if (passwordValue != confirmPasswordValue) { 
-          $("#conpasscheck").show(); 
-          $("#conpasscheck").html("**Password didn't Match"); 
-          $("#conpasscheck").css("color", "red"); 
-          confirmPasswordError = false; 
-          return false; 
-      } else { 
-          $("#conpasscheck").hide(); 
-      } 
-  } 
-
-  // Submit button 
-  $("#submitbtn").click(function () { 
-      validateUsername(); 
-      validatePassword(); 
-      validateConfirmPassword(); 
-      validateEmail(); 
-      if ( 
-          usernameError == true && 
-          passwordError == true && 
-          confirmPasswordError == true && 
-          emailError == true
-      ) { 
-          return true; 
-      } else { 
-          return false; 
-      } 
-  }); 
-});
-
 $(".second a").click(function () {
   $("#steps-uid-0-p-0").removeClass("current");
   $("#steps-uid-0-p-1").addClass("current");
@@ -180,3 +73,48 @@ $("#accordionPanelsStayOpenExample .accordion-button").click(function () {
     .children(".accordion-collapse")
     .toggleClass("show");
 });
+
+//-----JS for Price Range slider-----
+
+const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".price-input input"),
+  range = document.querySelector(".slider .progress");
+let priceGap = 1000;
+
+priceInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minPrice = parseInt(priceInput[0].value),
+      maxPrice = parseInt(priceInput[1].value);
+
+    if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+      if (e.target.className === "input-min") {
+        rangeInput[0].value = minPrice;
+        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+      } else {
+        rangeInput[1].value = maxPrice;
+        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+      }
+    }
+  });
+});
+
+rangeInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minVal = parseInt(rangeInput[0].value),
+      maxVal = parseInt(rangeInput[1].value);
+
+    if (maxVal - minVal < priceGap) {
+      if (e.target.className === "range-min") {
+        rangeInput[0].value = maxVal - priceGap;
+      } else {
+        rangeInput[1].value = minVal + priceGap;
+      }
+    } else {
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    }
+  });
+});
+

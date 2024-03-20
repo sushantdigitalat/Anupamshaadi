@@ -3512,7 +3512,7 @@ a.move-top span {
     width: auto;
     cursor: pointer;
     padding: 0 0 0 30px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 21px;
     margin: 0;
   }
@@ -3553,6 +3553,7 @@ a.move-top span {
     margin: 0;
     width: 100%;
     padding: 0 0 0 30px;
+    font-size: 15px;
   }
   .gender-box .radio-button{
     margin: 0;

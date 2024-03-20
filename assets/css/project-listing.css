@@ -119,8 +119,117 @@
   content: "\f106";
 }
 
-.card:hover, 
-.card:focus{
+.card.shadow-0:hover, 
+.card.shadow-0:focus{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
   border-color: #e12d6f !important;
+}
+
+/** price range slider **/
+
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 0px 0 30px;
+  flex-direction: column;
+}
+.price-input .field {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #ced4da;
+  -moz-appearance: textfield;
+  padding: 5px 10px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator {
+  width: 130px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress {
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 5px;
+  background: #e12d6f;
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #e12d6f;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #e12d6f;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Support */
+.support-box {
+  top: 2rem;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  display: block;
+}
+.b-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.b-btn.paypal i {
+  color: blue;
+}
+.b-btn:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+.b-btn i {
+  font-size: 20px;
+  color: yellow;
+  margin-top: 2rem;
 }
