@@ -65,7 +65,7 @@
 
 .profile-name-box{
   display: grid;
-  grid-template-columns: 20% 50% 30%;
+  grid-template-columns: 25% 45% 30%;
 }
 .profile-name-box .online{
   color: rgb(20, 164, 77);
