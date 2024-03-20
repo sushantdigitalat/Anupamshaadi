@@ -159,37 +159,6 @@ $(document).ready(function () {
   }); 
 });
 
-
-$("#caste").multiselect({
-  columns: 1,
-  texts: {
-    placeholder: "Select",
-    search: "Search",
-  },
-  search: true,
-  selectAll: true,
-});
-
-$("#education").multiselect({
-  columns: 1,
-  texts: {
-    placeholder: "Select",
-    search: "Search",
-  },
-  search: true,
-  selectAll: true,
-});
-
-$("#city").multiselect({
-  columns: 1,
-  texts: {
-    placeholder: "Select",
-    search: "Search",
-  },
-  search: true,
-  selectAll: true,
-});
-
 $(".second a").click(function () {
   $("#steps-uid-0-p-0").removeClass("current");
   $("#steps-uid-0-p-1").addClass("current");
@@ -202,4 +171,12 @@ $(".first a").click(function () {
   $("#steps-uid-0-p-0").addClass("current");
   $(".second").removeClass("current");
   $(".first").addClass("current");
+});
+
+$("#accordionPanelsStayOpenExample .accordion-button").click(function () {
+  $(this).toggleClass("expanded");
+  $(this)
+    .closest(".accordion-item")
+    .children(".accordion-collapse")
+    .toggleClass("show");
 });

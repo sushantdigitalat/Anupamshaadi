@@ -1190,3 +1190,36 @@
     }
   };
 })(jQuery);
+
+
+
+
+$("#caste").multiselect({
+  columns: 1,
+  texts: {
+    placeholder: "Select",
+    search: "Search",
+  },
+  search: true,
+  selectAll: true,
+});
+
+$("#education").multiselect({
+  columns: 1,
+  texts: {
+    placeholder: "Select",
+    search: "Search",
+  },
+  search: true,
+  selectAll: true,
+});
+
+$("#city").multiselect({
+  columns: 1,
+  texts: {
+    placeholder: "Select",
+    search: "Search",
+  },
+  search: true,
+  selectAll: true,
+});

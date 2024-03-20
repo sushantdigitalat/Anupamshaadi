@@ -1,7 +1,8 @@
 .profile-listing{
   padding: 50px 0;
 }
-.accordion-button {
+.accordion-button,
+.accordion-button:not([href]):not([tabindex]) {
   font-size: 18px;
   border-bottom: 1px solid #ccc;
   border-left: none;
@@ -12,6 +13,8 @@
   padding: 15px 20px;
   text-align: left;
   background-color: #f8f8f8;
+  display: block;
+  position: relative;
 }
 .accordion-item {
   border-bottom: 1px solid #ccc;
@@ -24,7 +27,7 @@
   border-top-right-radius: 5px;
 }
 .accordion-body{
-  padding: 1.15rem 1.5rem;
+  padding: 20px;
 }
 
 .list-unstyled .checkboxOverride{
@@ -55,14 +58,69 @@
   text-transform: capitalize;
 }
 
+.view-profile-link:hover{
+  color: #333;
+  text-shadow: none;
+}
+
 .profile-name-box{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 20% 50% 30%;
 }
 .profile-name-box .online{
-  color: green;
+  color: rgb(20, 164, 77);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 6% 94%;
+}
+.profile-name-box .online i{
+  font-size: 12px;
 }
 .profile-name-box .last-seen{
   color: #ccc;
   font-size: 13px;
+  text-align: right;
+}
+.page-link{
+  color: #999;
+}
+.page-item.disabled .page-link{
+  color: #ccc;
+}
+.page-item.active .page-link,
+.page-link:hover,
+.page-link:active,
+.page-link:focus,
+.badge-secondary{
+  background-color: #999;
+  border-color: #999;
+  color: #fff;
+}
+
+.checkboxOverride label{
+  margin: 0;
+}
+
+.panel-title {
+  position: relative;
+}
+  
+.accordion-button::after {
+  content: "\f107";
+  color: #333;
+  top: 5px;
+  right: 20px;
+  font-size: 30px;
+  position: absolute;
+  font-family: "FontAwesome"
+}
+
+.accordion-button.expanded::after {
+  content: "\f106";
+}
+
+.card:hover, 
+.card:focus{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
+  border-color: #e12d6f !important;
 }

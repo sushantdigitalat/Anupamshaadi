@@ -444,6 +444,9 @@ backdrop-filter: blur(1px);
 .search-pd{
   padding: 220px 0 40px;
 }
+.listing-pd{
+  padding: 360px 0 40px;
+}
 .banner-image{
   background-image: url(../images/slider-1.png);
   position: absolute;
@@ -3497,7 +3500,7 @@ a.move-top span {
     position: absolute;
   }
   .checkboxOverride {
-    margin: 0 0 10px;
+    margin: 0;
     position: relative;
     width: auto;
   }
@@ -3511,6 +3514,7 @@ a.move-top span {
     padding: 0 0 0 30px;
     font-size: 13px;
     line-height: 21px;
+    margin: 0;
   }
   .checkboxOverride label::before {
     background: none repeat scroll 0 0 #EEEEEE;
