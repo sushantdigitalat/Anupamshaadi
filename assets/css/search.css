@@ -124,7 +124,7 @@ input {
 }
   .form-flex .form-group {
     width: 50%;
-    padding: 0 10px; }
+    padding: 0 10px; margin-bottom: 0; }
 
 
 .form-group,
