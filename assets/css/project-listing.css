@@ -65,7 +65,7 @@
 
 .profile-name-box{
   display: grid;
-  grid-template-columns: 25% 45% 30%;
+  grid-template-columns: 25% 40% 35%;
 }
 .profile-name-box .online{
   color: rgb(20, 164, 77);
@@ -120,9 +120,15 @@
 }
 
 .card.shadow-0:hover, 
-.card.shadow-0:focus{
+.card.shadow-0:focus, 
+.featured-profile{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
   border-color: #e12d6f !important;
+}
+
+.card.shadow-0 {
+  margin: 0 0 10px;
+  cursor: pointer;
 }
 
 /** price range slider **/
@@ -232,4 +238,83 @@ input[type="range"]::-moz-range-thumb {
   font-size: 20px;
   color: yellow;
   margin-top: 2rem;
+}
+.new-button{
+  padding: 11.4px 20px;
+}
+.btn-group-new .new-button:first-child{
+  border-top-right-radius: 0;
+}
+.btn-group-new .new-button:last-child{
+  border-bottom-right-radius: 0;
+}
+.card.shadow-0:hover .new-button{
+  background-color: #dae0e5;
+}
+.card.shadow-0:hover .new-button:hover{
+  background-color: #e12d6f !important;
+  color: #fff !important;
+}
+.card.shadow-0 .new-button:hover i{
+  color: #fff;
+}
+
+/* ribbon profile */
+.ribbon-profile {
+  background: #e12d6f;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23), 0 1px 5px rgba(0, 0, 0, 0.16);
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  position: absolute;
+  width: 35px;
+  z-index: 10;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-radius: 100px;
+  float: right;
+  cursor: pointer;
+  bottom: 20px;
+  left: -10px;
+  right: auto;
+  border-radius: 0;
+}
+
+.ribbon-profile:hover, 
+.featured-profile:hover .ribbon-profile{
+  width: 140px;
+}
+
+.ribbon-profile:hover span,
+.featured-profile:hover .ribbon-profile span{
+  visibility: visible;
+  -webkit-transition: all 0.2s linear 0.18s;
+  transition: all 0.2s linear 0.18s;
+}
+
+.ribbon-profile span {
+  top: 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  float: left;
+  visibility: hidden;
+}
+
+.ribbon-profile i {
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  margin: 11px;
+  z-index: 10;
+  float: left;
+}
+
+.ribbon-profile:after {
+  border-left: 10px solid transparent;
+  border-top: 7px solid rgba(0, 0, 0, 0.5);
+  bottom: -7px;
+  content: "";
+  position: absolute;
+  left: 0;
 }

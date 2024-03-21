@@ -118,6 +118,12 @@ header.fixed {
 header.fixed .menu li a.btn.register {
   display: inline-block;
   margin-left: 20px;
+  padding: 5px 25px;
+  font-size: 1rem;
+}
+header.fixed .menu li a.btn.register:hover{
+  background-color: #fff;
+  color: #ec7b1d;
 }
 .right-p li,
 .right-p li a {
@@ -184,7 +190,8 @@ nav ul li {
 }
 
 /* Styling the links */
-nav a {
+nav a, 
+nav a:not([href]):not([tabindex]){
   color: #fff;
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -194,13 +201,15 @@ nav a {
   font-weight: 700;
   font-size: 18px;
   vertical-align: middle;
+  cursor: pointer;
 }
 nav ul li ul li:hover {
   background: #f8f9fa;
 }
 
 /* Background color change on Hover */
-nav a:hover {
+nav a:hover, 
+nav a:not([href]):not([tabindex]):hover{
   color: #ec7b1d;
 }
 .menu li.active a {
@@ -438,25 +447,26 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e12d6f",endCo
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
-.search-banner .layer {
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(
+.search-banner .layer, 
+.inner-page-banner .layer{
+  background: rgba(0, 0, 0, 0.7);
+  /* background: -moz-linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0) -50%,
+    rgba(0, 0, 0, 0) -70%,
     rgba(0, 0, 0, 0.9) 100%
   );
   background: -webkit-linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0) -50%,
+    rgba(0, 0, 0, 0) -70%,
     rgba(0, 0, 0, 0.9) 100%
   );
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0) -50%,
+    rgba(0, 0, 0, 0) -70%,
     rgba(0, 0, 0, 0.9) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px); */
 }
 .search-banner {
   background-image: url(../images/search-banner2.jpg);
@@ -467,11 +477,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e12d6f",endCo
   position: relative;
   /* backdrop-filter: blur(1px); */
 }
+.inner-page-banner {
+  background-image: url(../images/inner-page.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* margin-bottom: -305px; */
+  position: relative;
+  /* backdrop-filter: blur(1px); */
+}
 .search-pd {
   padding: 220px 0 40px;
 }
 .listing-pd {
-  padding: 360px 0 40px;
+  padding: 280px 0 40px;
 }
 .banner-image {
   background-image: url(../images/slider-1.png);
@@ -3503,9 +3522,7 @@ a.move-top span {
 
 /** FAQs **/
 
-.card {
-  margin: 0 0 10px;
-}
+
 .collapsible-link {
   text-transform: capitalize;
 }
@@ -3869,4 +3886,7 @@ a.move-top span {
 .dbox {
   font-size: 15px;
   line-height: 24px;
+}
+.h5-line-height{
+  line-height: 42px;
 }
