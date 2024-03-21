@@ -3590,7 +3590,7 @@ a.move-top span {
   font-size: 0.85rem;
   line-height: 1.3rem;
 }
-.why-register .grid h6 i {
+.why-register .grid i {
   font-size: 1.7em;
 }
 /* .modal .modal-content .modal-body .promo-img {
@@ -3828,7 +3828,7 @@ a.move-top span {
 }
 
 .contact-section .wrapper {
-  box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0px 30px -15px rgba(0, 0, 0, 0.18);
   margin: 100px 0;
   border-radius: 10px;
 }
@@ -3854,4 +3854,15 @@ a.move-top span {
   border-radius: 10px 0 0 10px;
   display: grid;
   place-content: center;
+}
+
+.tel-no{
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+.tel-no:hover,
+.tel-no:focus,
+.tel-no:active{
+  color: #ec7b1d;
 }
