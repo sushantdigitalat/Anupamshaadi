@@ -3866,3 +3866,7 @@ a.move-top span {
 .tel-no:active{
   color: #ec7b1d;
 }
+.dbox {
+  font-size: 15px;
+  line-height: 24px;
+}
