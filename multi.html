@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="icon" href="https://www.codexworld.com/wp-content/uploads/2014/09/favicon.ico" type="image/x-icon" />
+        <meta name="description" content="Live Demo at CodexWorld - Multi-select Dropdown List with Checkbox using jQuery">
+        <meta name="keywords" content="demo, codexworld demo, project demo, live demo, tutorials, programming, coding">
+        <meta name="author" content="CodexWorld">
+        <title>Live Demo - Multi-select Dropdown List with Checkbox using jQuery</title>
+
+        <link href="https://demos.codexworld.com/includes/css/material-fonts.css" rel="stylesheet">
+        <link href="https://demos.codexworld.com/includes/css/reset.css" rel="stylesheet">
+        <link href="https://demos.codexworld.com/includes/css/global.css" rel="stylesheet">
+        <link href="https://demos.codexworld.com/includes/css/style.css" rel="stylesheet">
+                <link href="https://demos.codexworld.com/includes/css/responsive.css" rel="stylesheet">
+
+        <script src="https://demos.codexworld.com/includes/js/jquery.min.js"></script>
+		
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5750766974376423" crossorigin="anonymous"></script>
+        
+<!-- jQuery library -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>-->
+
+<!-- JS & CSS library of MultiSelect plugin -->
+<script src="assets/js/jquery.multiselect.js"></script>
+<link rel="stylesheet" href="assets/css/jquery.multiselect.css">
+
+<!-- Base stylesheet file -->
+<link rel="stylesheet" href="css/style.css">
+
+<style type="text/css">
+input {
+    width: initial;
+}
+</style>
+</head>
+<body>
+        <header class="header_outer">
+            <div class="hdr_top">
+                <div class="containerDM-fluid">
+                    <div class="top_menuOuter">
+                        <div class="top_menuLft">
+                            <div class="innr_menubody">
+                                <div class="menu_innr">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.codexworld.com/" title="CodexWorld">
+                                                <i class="material-icons-outlined">home </i>
+                                                <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.codexqa.com/" title="Questions and answers community">
+                                                <i class="material-icons-outlined">quiz </i>
+                                                <span>Q&A</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.xwebtools.com/" title="Web development tools">
+                                                <i class="material-icons-outlined">construction </i>
+                                                <span>Web Tools</span>
+                                            </a>
+                                        </li>
+                                        <!--<li>
+                                            <a href="javascript:void(0);">
+                                                <i class="material-icons-outlined">work_outline </i>
+                                                <span>jobs</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <i class="material-icons-outlined">business </i>
+                                                <span>business</span>
+                                            </a>
+                                        </li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top_menuright">
+                            <div class="links_right">
+                            </div>
+                            <div class="hdr_social">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/codexworld" target="_blank" title="Follow CodexWorld on Facebook">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                                        </a>
+                                    </li>
+                                        <li>
+                                        <a href="https://twitter.com/codexworldweb" target="_blank" title="Follow CodexWorld on Twitter">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/codexworld" target="_blank" title="Subscribe CodexWorld on YouTube">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                                        </a>
+                                    </li>
+                                        <li>
+                                        <a href="https://www.linkedin.com/company/codexworld" target="_blank" title="Follow CodexWorld on LinkedIn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hdr_bttm">
+                <div class="containerDM-fluid">
+                    <div class="bttm_menuOuter">
+                        <div class="hdr_logo">
+                            <a href="https://demos.codexworld.com/" class="logo"><img src="https://demos.codexworld.com/includes/images/codexworld-demos-logo.png" alt="CodexWorld Demos" /></a>
+                        </div>
+                        
+                        <div class="right_srch_login">
+                            <div class="header_login">
+                                                                <a href="https://www.codexworld.com/downloads/multi-select-dropdown-list-with-checkbox-jquery" class="login_btn border_btn downld">
+                                    <i class="material-icons-outlined">download </i>
+                                    <span>Download</span>
+                                </a>
+                                                                                                <a href="https://www.codexworld.com/multi-select-dropdown-list-with-checkbox-jquery/" class="login_btn border_btn back-lnk">
+                                    <i class="material-icons-outlined">arrow_back </i>
+                                    <span>Back to Tutorial</span>
+                                </a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="overlay"></div>-->
+        </header>
+        <section class="banner_sec">
+            <div class="containerDM-fluid">
+                <div class="baner_content">
+                                            <h1><span>Live Demo:</span> Multi-select Dropdown List with Checkbox using jQuery </h1>
+                                    </div>
+            </div>
+        </section>
+            <section class="home_blogArea">
+            <div class="bar-header">
+                <!-- CodexWorld_Demo_HeaderTop -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5750766974376423"
+                    data-ad-slot="8179048472"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <div class="containerDM-fluid">
+                <div class="demo_pnlouter">
+                    <div class="rowDM">
+                        <div class="col-lg-12-DM">
+
+                        
+        
+    <div class="wrapper">
+        <h2>MultiSelect Dropdown with Checkboxes</h2>
+		<select name="langOpt[]" multiple id="langOpt">
+			<option value="C++">C++</option>
+			<option value="C#">C#</option>
+			<option value="Java">Java</option>
+			<option value="Objective-C">Objective-C</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Perl">Perl</option>
+			<option value="PHP">PHP</option>
+			<option value="Ruby on Rails">Ruby on Rails</option>
+			<option value="Android">Android</option>
+			<option value="iOS">iOS</option>
+			<option value="HTML">HTML</option>
+			<option value="XML">XML</option>
+		</select>
+		
+		<h2>MultiSelect Dropdown with Search Option</h2>
+		<select name="langOpt2[]" multiple id="langOpt2">
+			<option value="C++">C++</option>
+			<option value="C#">C#</option>
+			<option value="Java">Java</option>
+			<option value="Objective-C">Objective-C</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Perl">Perl</option>
+			<option value="PHP">PHP</option>
+			<option value="Ruby on Rails">Ruby on Rails</option>
+			<option value="Android">Android</option>
+			<option value="iOS">iOS</option>
+			<option value="HTML">HTML</option>
+			<option value="XML">XML</option>
+		</select>
+		
+		<h2>MultiSelect Dropdown with Select all Option</h2>
+		<select name="langOpt3[]" multiple id="langOpt3">
+			<option value="C++">C++</option>
+			<option value="C#">C#</option>
+			<option value="Java">Java</option>
+			<option value="Objective-C">Objective-C</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Perl">Perl</option>
+			<option value="PHP">PHP</option>
+			<option value="Ruby on Rails">Ruby on Rails</option>
+			<option value="Android">Android</option>
+			<option value="iOS">iOS</option>
+			<option value="HTML">HTML</option>
+			<option value="XML">XML</option>
+		</select>
+		
+		<h2>MultiSelect Dropdown with Optgroup</h2>
+		<select name="langOptgroup[]" multiple id="langOptgroup">
+			<optgroup label="Programming Languages">
+				<option value="C++ / C#">C++ / C#</option>
+				<option value="Java">Java</option>
+				<option value="Objective-C">Objective-C</option>
+			</optgroup>
+			<optgroup label="Client-side scripting Languages">
+				<option value="JavaScript">JavaScript</option>
+			</optgroup>
+			<optgroup label="Server-side scripting Languages">
+				<option value="Perl">Perl</option>
+				<option value="PHP">PHP</option>
+				<option value="Ruby on Rails">Ruby on Rails</option>
+			</optgroup>
+			<optgroup label="Mobile Platforms">
+				<option value="Android">Android</option>
+				<option value="iOS">iOS</option>
+			</optgroup>
+			<optgroup label="Document Markup Languages">
+				<option value="HTML">HTML</option>
+				<option value="XML">XML</option>
+			</optgroup>
+		</select>
+
+		<h2>Maximum Limit to Selected Options</h2>
+		<select name="langOpt4[]" multiple id="langOpt4">
+			<option value="C++">C++</option>
+			<option value="C#">C#</option>
+			<option value="Java">Java</option>
+			<option value="Objective-C">Objective-C</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Perl">Perl</option>
+			<option value="PHP">PHP</option>
+			<option value="Ruby on Rails">Ruby on Rails</option>
+			<option value="Android">Android</option>
+			<option value="iOS">iOS</option>
+			<option value="HTML">HTML</option>
+			<option value="XML">XML</option>
+		</select>
+
+        <h2>MultiSelect Dropdown - Get Selected Options with PHP</h2>
+        
+        <!-- HTML form -->
+        <form method="post">
+            <label>Languages:</label>
+            <!-- Multi-select dropdown -->
+            <select name="langOptgroup2[]" multiple id="langOptgroup2">
+                <optgroup label="Programming Languages">
+                    <option value="C++ / C#">C++ / C#</option>
+                    <option value="Java">Java</option>
+                    <option value="Objective-C">Objective-C</option>
+                </optgroup>
+                <optgroup label="Client-side scripting Languages">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="VBScript">VBScript</option>
+                    <option value="React">React</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                </optgroup>
+                <optgroup label="Server-side scripting Languages">
+                    <option value="Perl">Perl</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Ruby on Rails">Ruby on Rails</option>
+                    <option value="Python">Python</option>
+                </optgroup>
+                <optgroup label="Programming Languages for Mobile App">
+                    <option value="Swift">Swift</option>
+                    <option value="Kotlin">Kotlin</option>
+                    <option value="Dart">Dart</option>
+                    <option value="React Native">React Native</option>
+                    <option value="Flutter">Flutter</option>
+                </optgroup>
+                <optgroup label="Document Markup Languages">
+                    <option value="XML">XML</option>
+                </optgroup>
+            </select>
+
+            <!-- Submit button -->
+            <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar-footer">
+                <!-- CodexWorld_Demo_PageBottom -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5750766974376423"
+                    data-ad-slot="1397129652"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+                <footer class="footer_sec">
+            <div class="footer_top">
+                <div class="containerDM-fluid">
+                    <div class="top_outer">
+                        <div class="rowDM">
+                            <div class="col-lg-4-DM">
+                                <div class="ftr_logoArea">
+                                    <div class="ftr_logo">
+                                        <a href="https://www.codexworld.com/"><img src="https://www.codexworld.com/wp-content/uploads/2014/09/codexworld-logo.png" alt="CodexWorld" /></a>
+                                    </div>
+                                    <div class="ftr_para">
+                                        <p>CodexWorld is the most popular Programming & Web Development website aiming to provide the best online resources for web application developers and designers.</p>
+                                    </div>
+                                    <div class="ftr_social">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/codexworld" target="_blank" title="Follow CodexWorld on Facebook">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/codexworldweb" target="_blank" title="Follow CodexWorld on Twitter">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.youtube.com/codexworld" target="_blank" title="Subscribe CodexWorld on YouTube">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/codexworld" target="_blank" title="Follow CodexWorld on LinkedIn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2-DM col-md-3 col-6">
+                                <div class="ftr_items">
+                                    <h3>ABOUT US</h3>
+                                    <div class="ftr_links">
+                                        <ul>
+                                            <li><a href="https://www.codexworld.com/about-us" title="About Us"><i class="material-icons-outlined"> radio_button_checked</i><span>About CodexWorld</span></a></li>
+                                            <li><a href="https://www.codexworld.com/write-for-us" title="Write For Us"><i class="material-icons-outlined"> radio_button_checked</i><span>Write For Us</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2-DM col-md-3 col-6">
+                                <div class="ftr_items">
+                                    <h3>Contact</h3>
+                                    <div class="ftr_links">
+                                        <ul>
+                                            <li><a href="https://www.codexworld.com/contact" title="Contact Us"><i class="material-icons-outlined"> radio_button_checked</i><span>Contact Us</span></a></li>
+                                            <li><a href="https://www.codexworld.com/advertise" title="Advertise on CodexWorld"><i class="material-icons-outlined"> radio_button_checked</i><span>Advertise</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2-DM col-md-3 col-6">
+                                <div class="ftr_items">
+                                    <h3>Terms</h3>
+                                    <div class="ftr_links">
+                                        <ul>
+                                            <li><a href="https://www.codexworld.com/terms-conditions" title="Terms and Conditions"><i class="material-icons-outlined"> radio_button_checked</i><span>Terms & Conditions</span></a></li>
+                                            <li><a href="https://www.codexworld.com/privacy-policy" title="Privacy Policy"><i class="material-icons-outlined"> radio_button_checked</i><span>Privacy Policy</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2-DM col-md-3 col-6">
+                                <div class="ftr_items">
+                                    <h3>Extra Links</h3>
+                                    <div class="ftr_links">
+                                        <ul>
+                                            <li><a href="https://www.codexqa.com/" title="Questions and answers community"><i class="material-icons-outlined"> radio_button_checked</i><span>Q&A Community</span></a></li>
+                                            <li><a href="http://www.xwebtools.com/" title="Web development tools"><i class="material-icons-outlined"> radio_button_checked</i><span>Online Tools</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bttm">
+                <div class="containerDM-fluid">
+                    <div class="copyright_outer">
+                        <div class="copyright_text">
+                            <p>Copyright &copy; 2024 <a href="https://www.codexworld.com/" title="Programming and Web Development Tutorials and Demos">CodexWorld</a>. All rights reserved.</p>
+                        </div>
+                        <div class="privacy_links">
+                            <ul>
+                                <li>
+                                    <a href="https://www.codexworld.com/terms-conditions" title="Terms and Conditions">
+                                        <i class="material-icons-outlined">gavel</i>
+                                        <span>terms & condition</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.codexworld.com/privacy-policy" title="Privacy Policy">
+                                        <i class="material-icons-outlined">verified_user</i>
+                                        <span>privacy policy</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+        $(window).scroll(function() {
+            if ( $(document).scrollTop() > $(".hdr_top").outerHeight() ) {
+            $('.header_outer').addClass('shrink');
+            } else {
+            $('.header_outer').removeClass('shrink');
+            }
+        });
+        </script>
+        <script>
+$('#langOpt').multiselect({
+    columns: 1,
+	texts: {
+        placeholder: 'Select Languages'
+    }
+});
+
+$('#langOpt2').multiselect({
+    columns: 1,
+    texts: {
+        placeholder: 'Select Languages',
+		search     : 'Search Languages'
+    },
+    search: true
+});
+
+$('#langOpt3').multiselect({
+    columns: 1,
+    texts: {
+        placeholder: 'Select Languages',
+		search     : 'Search Languages'
+    },
+    search: true,
+    selectAll: true
+});
+
+$('#langOptgroup').multiselect({
+    columns: 3,
+    texts: {
+    placeholder: 'Select Languages',
+		search     : 'Search Languages'
+    },
+    search: true,
+    selectAll: true
+});
+
+$('#langOpt4').multiselect({
+    columns: 3,
+	texts: {
+        placeholder: 'Select Languages (max 3)',
+        search     : 'Search Languages'
+    },
+    search: true,
+    onOptionClick: function( element, option ) {
+        var maxSelect = 3;
+
+        // too many selected, deselect this option
+        if( $(element).val().length > maxSelect ) {
+            if( $(option).is(':checked') ) {
+                var thisVals = $(element).val();
+
+                thisVals.splice(
+                    thisVals.indexOf( $(option).val() ), 1
+                );
+
+                $(element).val( thisVals );
+
+                $(option).prop( 'checked', false ).closest('li')
+                    .toggleClass('selected');
+            }
+        }
+        // max select reached, disable non-checked checkboxes
+        else if( $(element).val().length == maxSelect ) {
+            $(element).next('.ms-options-wrap')
+                .find('li:not(.selected)').addClass('disabled')
+                .find('input[type="checkbox"]')
+                    .attr( 'disabled', 'disabled' );
+        }
+        // max select not reached, make sure any disabled
+        // checkboxes are available
+        else {
+            $(element).next('.ms-options-wrap')
+                .find('li.disabled').removeClass('disabled')
+                .find('input[type="checkbox"]')
+                    .removeAttr( 'disabled' );
+        }
+    }
+});
+
+$('#langOptgroup2').multiselect({
+    columns: 3,
+    texts: {
+        placeholder: 'Select Languages',
+		search     : 'Search Languages'
+    },
+    search: true,
+    selectAll: true
+});
+</script>
+</body>
+</html>
