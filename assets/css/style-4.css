@@ -1074,8 +1074,6 @@ h2.heading {
   left: 0;
   top: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -1214,16 +1212,6 @@ h2.heading {
   font-size: 13px;
   text-transform: capitalize;
   line-height: 21px;
-}
-.anim-icons {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
 }
 .rings {
   top: 15%;
@@ -1547,7 +1535,7 @@ h2.heading {
   top: 0;
   padding-bottom: 20px;
   padding-top: 20px;
-}
+} 
 
 .pricing-wrapper:hover .current .pricing-card {
   -webkit-transition: all 0.2s linear 0s;
@@ -1845,7 +1833,7 @@ h2.heading {
   padding: 30px 15px;
   border-bottom-color: #ddd !important;
   text-align: center;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .list-feature .pricing-header h5 {
@@ -3905,6 +3893,6 @@ a.move-top span {
 .why-us-listing li i{
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 7px;
 }
 
