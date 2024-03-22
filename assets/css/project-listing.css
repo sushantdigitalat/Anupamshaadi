@@ -257,12 +257,20 @@ input[type="range"]::-moz-range-thumb {
 .card.shadow-0:hover .new-button{
   background-color: #dae0e5;
 }
-.card.shadow-0:hover .new-button:hover{
-  background-color: #e12d6f !important;
-  color: #fff !important;
+.card.shadow-0:hover .new-button{
+  background-color: #e12d6f;
+  color: #fff ;
 }
-.card.shadow-0 .new-button:hover i{
+.card.shadow-0:hover .new-button:hover{
+  background-color: #fff;
+  color: #e12d6f;
+  border-color: #e12d6f !important;
+}
+.card.shadow-0:hover .new-button i{
   color: #fff;
+}
+.card.shadow-0:hover .new-button:hover i{
+  color: #e12d6f;
 }
 
 /* ribbon profile */
