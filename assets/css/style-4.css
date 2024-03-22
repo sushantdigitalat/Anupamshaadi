@@ -3890,3 +3890,21 @@ a.move-top span {
 .h5-line-height{
   line-height: 42px;
 }
+.why-us-listing{
+  list-style: none;
+  padding: 10px 0 30px;
+}
+.why-us-listing li{
+  padding: 0 0 15px 30px;
+  position: relative;
+    font-size: 15px;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #666;
+}
+.why-us-listing li i{
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+

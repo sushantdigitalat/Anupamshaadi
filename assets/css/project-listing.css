@@ -69,20 +69,26 @@
 }
 .profile-name-box .online{
   color: rgb(20, 164, 77);
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 6% 94%;
+  justify-content: end;
 }
 .profile-name-box .online i{
-  font-size: 12px;
+  font-size: 10px;
+  margin-right: 5px;
 }
 .profile-name-box .last-seen{
   color: #ccc;
   font-size: 13px;
   text-align: right;
 }
+.profile-available{
+  text-align: right;
+}
 .page-link{
   color: #999;
+  font-size: 16px;
+  font-weight: 400;
 }
 .page-item.disabled .page-link{
   color: #ccc;
@@ -240,7 +246,7 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 2rem;
 }
 .new-button{
-  padding: 11.2px 20px;
+  padding: 11px 20px;
 }
 .btn-group-new .new-button:first-child{
   border-top-right-radius: 0;
@@ -281,12 +287,12 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .ribbon-profile:hover, 
-.featured-profile:hover .ribbon-profile{
+.featured-profile .ribbon-profile{
   width: 140px;
 }
 
 .ribbon-profile:hover span,
-.featured-profile:hover .ribbon-profile span{
+.featured-profile .ribbon-profile span{
   visibility: visible;
   -webkit-transition: all 0.2s linear 0.18s;
   transition: all 0.2s linear 0.18s;
