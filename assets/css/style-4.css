@@ -281,7 +281,8 @@ li > a:only-child:after {
   nav {
     margin: 0;
   }
-  nav a {
+  nav a, 
+  .tooltip-help span{
     color: #333;
   }
 
@@ -327,6 +328,10 @@ li > a:only-child:after {
     padding: 15px 0;
     width: 100%;
     text-align: center;
+  }
+
+  [id^="drop"]:checked + ul li .register{
+    display: inline;
   }
 
   /* Change menu item's width to 100% */
@@ -1461,6 +1466,7 @@ h2.heading {
 }
 .app-box img {
   max-width: 450px;
+  width: 100%;
 }
 /* .our-services-wrapper:hover .services-inner p, .our-services-wrapper:hover .services-inner h4, .our-services-wrapper:hover .services-inner .our-services-img span.fa {color: #fff;}
 .our-services-wrapper:hover .services-inner h4::before{background-color: #fff;}
@@ -3973,4 +3979,79 @@ a.move-top span {
   border: 1px solid #ec7b1d;
 }
 
-
+@media (max-width: 768px) {
+  .register-box, .promo-img{
+    display: none;
+  }
+  .modal .modal-content .modal-body .main-content,
+  .modal .modal-content .modal-body .main-content.register{
+    grid-template-columns: auto;
+  }
+  .form-group .col-lg-6.pl-0{
+    padding: 0 15px !important;
+    margin: 1rem 0 0;
+  }
+  .footer-h4{
+    padding: 15px 0;
+  }
+  #accordionExample .collapsible-link{
+    padding: 0 40px 0 0;
+  }
+  .collapsible-link::before{
+    right: 0;
+  }
+  .collapsible-link::after{
+    right: 6px;
+  }
+  .banner-form-w3{
+    padding: 15px;
+    width: 100%;
+  }
+  .banner-form-w3 h5{
+    padding: 0 0 15px;
+    text-align: center;
+  }
+  .btn-box .btn{
+    padding: 10px;
+  }
+  .services-inner-2{
+    padding: 0 0 15px;
+  }
+  .dots-2{
+    display: none;
+  }
+  .about-us .pink-rings,
+  .pink-rings{
+    top: 30px;
+    margin-left: 100px;
+    background-size: 70px;
+    width: 70px;
+    height: 70px;
+  }
+  .services-inner.arrow::after{
+    display: none;
+  }
+  .how-it-works .layer{
+    padding: 30px 0 10px;
+  }
+  .faq-section{
+    padding: 40px 0;
+  }
+  .faq-section .pink-rings{
+    margin-left: 100px;
+    top: 40px;
+  }
+  .membership-box{
+    margin: 0 0 30px;
+  }
+  .three-grids-w3pvt img{
+    max-height: 280px;
+  }
+  .partner-events-gallery .gallery_wrapper .owl-stage-outer .owl-stage .owl-item.active.center .item,
+  .partner-events-gallery .gallery_wrapper .owl-stage-outer .owl-stage .owl-item .item{
+    height: auto;
+  }
+  .partner-events-gallery .gallery_wrapper .owl-stage-outer .owl-stage .owl-item.active{
+    width: 0 !important;
+  }
+}
