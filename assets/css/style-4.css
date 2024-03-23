@@ -424,7 +424,7 @@ li > a:only-child:after {
 .banner {
   background-image: url(../images/banner-3.jpg);
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: 0 6px;
   background-size: cover;
   /* margin-bottom: -305px; */
   position: relative;
