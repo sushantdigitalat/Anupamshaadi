@@ -424,7 +424,7 @@ li > a:only-child:after {
 .banner {
   background-image: url(../images/banner-3.jpg);
   background-repeat: no-repeat;
-  background-position: 0 6px;
+  background-position: center 0;
   background-size: cover;
   /* margin-bottom: -305px; */
   position: relative;
@@ -530,7 +530,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e12d6f",endCo
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 60%;
-  margin: auto auto 50px;
+  margin: auto auto 44px;
   position: relative;
   color: #fff;
   font-size: 18px;
