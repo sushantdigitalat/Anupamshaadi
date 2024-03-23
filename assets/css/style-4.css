@@ -191,7 +191,8 @@ nav ul li {
 
 /* Styling the links */
 nav a, 
-nav a:not([href]):not([tabindex]){
+nav a:not([href]):not([tabindex]),
+.tooltip-help span{
   color: #fff;
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -2509,6 +2510,11 @@ ul.links a {
   padding: 0 10px;
   display: inline-block;
 }
+ul.links a:hover,
+ul.links a:focus,
+ul.links a:active{
+  color: #ec7b1d;
+}
 .copyright {
   background: #111;
 }
@@ -3895,4 +3901,76 @@ a.move-top span {
   left: 0;
   top: 7px;
 }
+
+
+/** help tooltip-help  **/
+
+.tooltip-help {
+  display:inline-block;
+  position:relative;
+  text-align:left;
+}
+
+.tooltip-help h5 {margin:0 0 15px;}
+
+.tooltip-help .bottom {
+  min-width:200px;
+  /*max-width:400px;*/
+  top:40px;
+  left:50%;
+  transform:translate(-50%, 0);
+  padding:20px;
+  color:#666666;
+  background-color:#f8f8f8;
+  font-weight:normal;
+  font-size:13px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  display:none;
+  border: 1px solid #ec7b1d;
+}
+
+.tooltip-help:hover .bottom {
+  display:block;
+}
+
+.menu li .tooltip-help a{
+  color: #666;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.menu li .tooltip-help a i{
+  padding-right: 3px;
+}
+.menu li .tooltip-help a:hover{
+  color: #ec7b1d;
+}
+
+.tooltip-help .bottom i.top-arrow {
+  position:absolute;
+  bottom:100%;
+  left:50%;
+  margin-left:-12px;
+  width:24px;
+  height:12px;
+  overflow:hidden;
+}
+
+.tooltip-help .bottom i.top-arrow::after {
+  content:'';
+  position:absolute;
+  width:12px;
+  height:12px;
+  left:50%;
+  transform:translate(-50%,50%) rotate(45deg);
+  background-color:#EEEEEE;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  border: 1px solid #ec7b1d;
+}
+
 
