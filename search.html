@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+  <head>
+    <title>Marathi Matrimony Website - Anupamshaadi</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="Marathi Matrimony Website - Anupamshaadi"
+    />
+<!-- Favicons -->
+<link href="assets/images/favicon.png" rel="icon">
+<link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- css files -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap css -->
+    <link href="assets/css/style-4.css" rel="stylesheet" type="text/css" />
+    <!-- custom css -->
+    <link
+      href="assets/css/search.css"
+      type="text/css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- fontawesome css -->
+
+    <!-- //css files -->
+
+    <!-- google fonts -->
+    <link
+      href="//fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- //google fonts -->
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <!-- nav -->
+        <nav class="d-lg-flex">
+          <div id="logo">
+            <h1>
+              <a href="index.html"
+                ><img src="assets/images/anupamshaadi.png" alt="logo" />
+              </a>
+            </h1>
+          </div>
+          <label for="drop" class="toggle"
+            ><span class="fa fa-bars"></span
+          ></label>
+          <input type="checkbox" id="drop" />
+          <ul class="menu ml-auto mt-3">
+            <li class="py-1 mr-2"><a href="search.html">Search</a></li>
+            <li class="py-1 mr-4">
+                      <div class="tooltip-help">
+                       <span> Help? </span>
+                        <div class="bottom">
+                          <h5>Call On</h5>
+                            <div class="mb-2">
+                              <a href="tel:+918378910999"><i class="fa fa-phone"></i> +91-8378910999</a>
+                            </div>
+                            <div>
+                              <a href="tel:+918275016501"><i class="fa fa-phone"></i> +91-8275016501</a>
+                            </div>
+                            <i class="top-arrow"></i>
+                        </div>
+                    </div>
+                    </li>
+            <li class="">
+              <a
+                href="#"
+                class="btn btn-primary btn-orange-outline rounded"
+                data-toggle="modal"
+                data-target="#login-modal"
+                >Login</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="btn btn-primary btn-orange rounded register"
+                data-toggle="modal"
+                data-target="#register-modal"
+                >Register</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- //nav -->
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- banner -->
+    <div class="search-banner">
+      <div class="banner-image"></div>
+      <div class="layer">
+        <div class="container">
+          <div class="row">
+            <div class="container-fluid">
+              <div class="search-pd text-center">
+                <h4 class="b-w3ltxt text-capitalize mt-md-4">
+                  Search from Thousands of Marathi Profiles
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //banner -->
+
+    <section class="search-section">
+      <div class="container">
+        <form
+          method="POST"
+          id="search-form"
+          class="signup-form"
+          action="#"
+          novalidate="novalidate"
+        >
+          <div
+            role="application"
+            class="wizard clearfix vertical"
+            id="steps-uid-0"
+          >
+            <div class="steps clearfix">
+              <ul role="tablist">
+                <li class="first current">
+                  <a id="">Regular Search</a>
+                </li>
+                <li class="second">
+                  <a id=""> Search by Profile ID</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content clearfix">
+              <fieldset
+                id="steps-uid-0-p-0"
+                class="tab-body current"
+              >
+                <div class="fieldset-content">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Gender</label>
+                    <div class="col-sm-9">
+                    <div class="form-flex col-form-label">
+                      <div class="form-group">
+                        <div class="gender-box">
+                          <div class="radio-button">
+                            <input id="male" name="radio" type="radio" />
+                            <label for="male" class="radio-label">Male</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="gender-box">
+                          <div class="radio-button">
+                            <input id="female" name="radio" type="radio" />
+                            <label for="female" class="radio-label"
+                              >Female</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="age" class="col-sm-3 col-form-label">Age</label>
+                    <div class="col-sm-9">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <select class="dropselect" name="agefrm" id="agefrm">
+                          <option value="">Select</option>
+                          <option value="18" selected="selected">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                          <option value="32">32</option>
+                          <option value="33">33</option>
+                          <option value="34">34</option>
+                          <option value="35">35</option>
+                          <option value="36">36</option>
+                          <option value="37">37</option>
+                          <option value="38">38</option>
+                          <option value="39">39</option>
+                          <option value="40">40</option>
+                          <option value="41">41</option>
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                          <option value="46">46</option>
+                          <option value="47">47</option>
+                          <option value="48">48</option>
+                          <option value="49">49</option>
+                          <option value="50">50</option>
+                          <option value="51">51</option>
+                          <option value="52">52</option>
+                          <option value="53">53</option>
+                          <option value="54">54</option>
+                          <option value="55">55</option>
+                          <option value="56">56</option>
+                          <option value="57">57</option>
+                          <option value="58">58</option>
+                          <option value="59">59</option>
+                          <option value="60">60</option>
+                          <option value="61">61</option>
+                          <option value="62">62</option>
+                          <option value="63">63</option>
+                          <option value="64">64</option>
+                          <option value="65">65</option>
+                          <option value="66">66</option>
+                          <option value="67">67</option>
+                          <option value="68">68</option>
+                          <option value="69">69</option>
+                          <option value="70">70</option>
+                          <option value="71">71</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-1 text-center-all">to</div>
+                      <div class="col-lg-3">
+                        <select class="dropselect" name="agefrm" id="agefrm">
+                          <option value="">Select</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30" selected="selected">30</option>
+                          <option value="31">31</option>
+                          <option value="32">32</option>
+                          <option value="33">33</option>
+                          <option value="34">34</option>
+                          <option value="35">35</option>
+                          <option value="36">36</option>
+                          <option value="37">37</option>
+                          <option value="38">38</option>
+                          <option value="39">39</option>
+                          <option value="40">40</option>
+                          <option value="41">41</option>
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                          <option value="46">46</option>
+                          <option value="47">47</option>
+                          <option value="48">48</option>
+                          <option value="49">49</option>
+                          <option value="50">50</option>
+                          <option value="51">51</option>
+                          <option value="52">52</option>
+                          <option value="53">53</option>
+                          <option value="54">54</option>
+                          <option value="55">55</option>
+                          <option value="56">56</option>
+                          <option value="57">57</option>
+                          <option value="58">58</option>
+                          <option value="59">59</option>
+                          <option value="60">60</option>
+                          <option value="61">61</option>
+                          <option value="62">62</option>
+                          <option value="63">63</option>
+                          <option value="64">64</option>
+                          <option value="65">65</option>
+                          <option value="66">66</option>
+                          <option value="67">67</option>
+                          <option value="68">68</option>
+                          <option value="69">69</option>
+                          <option value="70">70</option>
+                          <option value="71">71</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="Status" class="col-sm-3 col-form-label"
+                      >Marital Status</label
+                    >
+                    <div class="col-sm-9 col-form-label">
+                    <div class="status-grid">
+                      <div class="">
+                        <div class="checkboxOverride">
+                          <input type="checkbox" name="" id="all" value="1" />
+                          <label for="all">All</label>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="checkboxOverride">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="unmarried"
+                            value="1"
+                          />
+                          <label for="unmarried">Unmarried</label>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="checkboxOverride">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="divorcee"
+                            value="1"
+                          />
+                          <label for="divorcee">Divorcee</label>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="checkboxOverride">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="separated"
+                            value="1"
+                          />
+                          <label for="separated">Separated</label>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="checkboxOverride">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="widowed"
+                            value="1"
+                          />
+                          <label for="widowed">Widowed</label>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="checkboxOverride">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="awaiting"
+                            value="1"
+                          />
+                          <label for="awaiting">Awaiting Divorce</label>
+                        </div>
+                      </div>
+                    </div></div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="birth_date" class="col-sm-3 col-form-label">Religion</label>
+                    <div class="col-sm-9">
+                    <select class="dropselect" name="religionid">
+                      <option value="" selected="selected">Select</option>
+                      <option value="0">Any</option>
+                      <option value="1">Hindu</option>
+                      <option value="3">Muslim</option>
+                      <option value="4">Sikh</option>
+                      <option value="5">Jain</option>
+                      <option value="7">Buddhist</option>
+                      <option value="30">Christian</option>
+                      <option value="31">Parsi</option>
+                      <option value="32">Jewish</option>
+                      <option value="33">Spiritual</option>
+                      <option value="34">No Religion</option>
+                      <option value="35">Other</option>
+                      <option value="38">Telgu</option>
+                      <option value="39">Catholic</option>
+                      <option value="40">Kannad</option>
+                    </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-3 col-form-label">Caste</label>
+                    <div class="col-sm-9">
+                    <select name="langOpt3[]" multiple id="caste">
+                      <option value="any">Any</option>
+                      <option value="Niyogi">6000 Niyogi</option>
+                      <option value="96k">96k maratha</option>
+                      <option value="aryav">Aaryavaishya</option>
+                      <option value="adi">Adi Andhra</option>
+                      <option value="adi2">Adi Dravida</option>
+                      <option value="adi3">Adi Karnataka</option>
+                    </select></div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-3 col-form-label">Education</label>
+                    <div class="col-sm-9">
+                    <select name="langOpt3[]" multiple id="education">
+                      <option value="any">Any</option>
+                      <option value="Niyogi">Graduate</option>
+                      <option value="96k">Bachelors</option>
+                      <option value="aryav">Doctorate</option>
+                      <option value="adi">Diploma</option>
+                      <option value="adi2">Under Graduate</option>
+                      <option value="adi3">Associate Degree</option>
+                    </select></div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-3 col-form-label">City</label>
+                    <div class="col-sm-9">
+                    <select name="langOpt3[]" multiple id="city">
+                      <option value="any">Any</option>
+                      <option value="Niyogi">Mumbai</option>
+                      <option value="96k">Navi Mumbai</option>
+                      <option value="aryav">Pune</option>
+                      <option value="adi">Nashik</option>
+                      <option value="adi2">Nagpur</option>
+                    </select></div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-3 col-form-label">Annual Income(INR)</label>
+                    <div class="col-sm-9">
+                    <select class="dropselect" name="annualincome">
+                      <option value="">Select</option>
+                      <option value="No Income">No Income</option>
+                      <option value="Under 50000">Under 50000</option>
+                      <option value="Rs.50,001 - 1,00,000">
+                        Rs.50,001 - 1,00,000
+                      </option>
+                      <option value="Rs.1,00,001 - 2,00,000">
+                        Rs.1,00,001 - 2,00,000
+                      </option>
+                      <option value="Rs.2,00,001 -   3,00,000">
+                        Rs.2,00,001 - 3,00,000
+                      </option>
+                      <option value="Rs.3,00,001 - 4,00,000">
+                        Rs.3,00,001 - 4,00,000
+                      </option>
+                      <option value="Rs.4,00,001 - 5,00,000">
+                        Rs.4,00,001 - 5,00,000
+                      </option>
+                      <option value="Rs.5,00,001 - 7,50,000">
+                        Rs.5,00,001 - 7,50,000
+                      </option>
+                      <option value="Rs.7,50,001 - 10,00,000">
+                        Rs.7,50,001 - 10,00,000
+                      </option>
+                      <option value="Rs.10,00,001 - Rs.20,00,000">
+                        Rs.10,00,001 - Rs.20,00,000
+                      </option>
+                      <option value="Rs.20,00,001 - Rs.50,00,000">
+                        Rs.20,00,001 - Rs.50,00,000
+                      </option>
+                      <option value="Rs.50,00,001 - Rs.1,00,00,000">
+                        Rs.50,00,001 - Rs.1,00,00,000
+                      </option>
+                      <option value="Rs.1,00,00,001 and above">
+                        Rs.1,00,00,001 and above
+                      </option>
+                    </select></div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-3">&nbsp;</div>
+                    <div class="col-sm-9">
+                    <a href="profile-listing.html"
+                      class="btn btn-primary btn-pink rounded pl-3 pr-3 py-2 mt-2"
+                    >
+                      <span class="btn-title">Search Now</span>
+                    </a></div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset
+                id="steps-uid-0-p-1"
+                class="tab-body"
+              >
+                <div class="fieldset-content">
+                  <div class="form-group row">
+                    <label for="find_profile" class="col-sm-3 col-form-label"
+                      >Type Profile ID</label
+                    >
+                    <div class="col-sm-9">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="find_profile"
+                        id="find_profile"
+                        class="form-control"
+                        placeholder="Ex. 123456"
+                      />
+                    </div>
+                </div></div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">&nbsp;</div>
+                    <div class="col-sm-9">
+                      <a href="profile-listing.html"
+                        class="btn btn-primary btn-pink rounded pl-3 pr-3 py-2"
+                      >
+                        <span class="btn-title">Search Now</span>
+                      </a></div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </form>
+          </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-layer py-sm-5 pt-5 pb-3">
+        <div class="container py-md-3">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <h4 class="footer-h4">Account</h4>
+              <ul class="footer-ul">
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> Login</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> My Profile</a
+                  >
+                </li>
+
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> My Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> Modify Profile</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> Wishlist</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4 class="footer-h4">Services</h4>
+              <ul class="footer-ul">
+                <li>
+                  <a href="membership.html"
+                    ><i class="fa fa-arrow-circle-right"></i> Membership
+                    Plans</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> My Orders</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> Express Interest
+                    Sent</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> Express Interest
+                    Received</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> Messages</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-arrow-circle-right"></i> Matches</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4 class="footer-h4">Help</h4>
+              <ul class="footer-ul">
+                <li>
+                  <a href="contact-us.html"
+                    ><i class="fa fa-arrow-circle-right"></i> Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="about-us.html"
+                    ><i class="fa fa-arrow-circle-right"></i> About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="feedback.html"
+                    ><i class="fa fa-arrow-circle-right"></i> Feedback</a
+                  >
+                </li>
+
+                <li>
+                  <a href="report-misuse.html"
+                    ><i class="fa fa-arrow-circle-right"></i> Report Misuse</a
+                  >
+                </li>
+                <li>
+                  <a href="faqs.html"
+                    ><i class="fa fa-arrow-circle-right"></i> FAQs?</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4 class="footer-h4">Legal</h4>
+              <ul class="footer-ul">
+                <li>
+                  <a href="terms.html">
+                    <i class="fa fa-arrow-circle-right"></i>Terms And
+                    Condition</a
+                  >
+                </li>
+                <li>
+                  <a href="privacy-policy.html"
+                    ><i class="fa fa-arrow-circle-right"></i> Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="certificates.html"
+                    ><i class="fa fa-arrow-circle-right"></i> Certificates</a
+                  >
+                </li>
+                <li>
+                  <img
+                    alt="ISO certificate"
+                    src="https://www.anupamshaadi.com/assets/images/homepage/footer.png"
+                    class="iso-cert img-responsive"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- copyright -->
+    <section class="copyright">
+      <div class="container py-4">
+        <div class="row bottom">
+          <ul class="col-lg-6 links p-0">
+            <li>
+              <a href="https://www.facebook.com/anupamshaadi" target="_blank"
+                ><i class="fa fa-facebook fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/anupamshaadi" target="_blank"
+                ><i class="fa fa-twitter fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/anupamshaadi-anupamshaadi-6597b4190"
+                target="_blank"
+                ><i class="fa fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/anupamshaadi/" target="_blank"
+                ><i class="fa fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://in.pinterest.com/anupamshaadi6553/"
+                target="_blank"
+                ><i class="fa fa-pinterest fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="col-lg-6 copy-right p-0">
+            <p class="">
+              All rights are reserved | @Copyrights 2024
+              <a href="www.anupamshaadi.com"> anupamshaadi.com.</a>
+            </p>
+          </div>
+          <div class="col-lg-12 text-center pt-3">
+            <p>www.anupamshaadi.com is not affiliated to Shaadi.com</p>
+            <p>Need Help? Call On +91-8378910999, +91-8275016501</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //copyright -->
+
+    <!-- move top -->
+    <div class="move-top text-right">
+      <a href="#home" class="move-top">
+        <span class="fa fa-angle-up mb-3" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- move top -->
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="login-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="main-content">
+              <div class="bg-image promo-img">
+                <div class="layer">
+                  <img src="assets/images/sign-in.jpg" alt="" />
+                </div>
+              </div>
+              <div class="content-text p-4">
+                <button
+                  type="button"
+                  class="btn-close"
+                  aria-label="Close"
+                  data-dismiss="modal"
+                >
+                  <i class="fa fa-times"></i>
+                </button>
+                <h5 class="mb-3">Login</h5>
+                <form action="#">
+                  <div class="form-group">
+                    <label for="email">Email Address / Mobile No.</label>
+                    <input
+                      type="email"
+                      placeholder="Enter Email Address / Mobile No."
+                      class="form-control"
+                      id="email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Password</label>
+                    <input
+                      type="password"
+                      placeholder="Enter Password"
+                      class="form-control"
+                      id="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="form-login">
+                      <div class="checkboxOverride">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="checkboxInputOverride"
+                          value="1"
+                        />
+                        <label for="checkboxInputOverride"
+                          >Stay Logged in</label
+                        >
+                      </div>
+                      <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-orange rounded btn-block"
+                    >
+                      Login
+                    </button>
+                  </div>
+                  <div class="form-group register-here">
+                    <h4>
+                      New to AnupamShaadi.com?
+                      <a
+                        data-toggle="modal"
+                        data-target="#register-modal"
+                        data-dismiss="modal"
+                        >Register Free</a
+                      >
+                    </h4>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Register Modal -->
+    <div
+      class="modal fade"
+      id="register-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="main-content register">
+              <div class="register-box">
+                <div class="layer p-4">
+                  <h4 class="mb-3">Why Register?</h4>
+                  <img
+                    src="assets/images/why-register.jpg"
+                    alt="why register"
+                    class="register-img"
+                    style="display: none"
+                  />
+                  <div class="why-register">
+                    <div class="grid">
+                      <i class="fa fa-2x fa-list-ul"></i>
+                      <h6>Thousands of Genuine Profiles</h6>
+                    </div>
+                    <div class="grid">
+                      <i class="fa fa-2x fa-certificate"></i>
+                      <h6>
+                        ISO<br />
+                        Certified
+                      </h6>
+                    </div>
+                    <div class="grid">
+                      <i class="fa fa-2x fa-shield"></i>
+                      <h6>Secure & Family Friendly</h6>
+                    </div>
+                    <div class="grid">
+                      <i class="fa fa-2x fa-lock"></i>
+                      <h6>Strict Privacy Control</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-text p-4">
+                <button
+                  type="button"
+                  class="btn-close"
+                  aria-label="Close"
+                  data-dismiss="modal"
+                >
+                  <i class="fa fa-times"></i>
+                </button>
+                <h5 class="mb-3">Welcome! Let's start</h5>
+
+                <form action="#">
+                  <div class="form-group row">
+                    <div class="col-lg-6">
+                      <label for="create"
+                        >Create a Profile For <span>*</span></label
+                      >
+                      <select
+                        class="dropselect"
+                        name="profile"
+                        selected=""
+                        tabindex="1"
+                      >
+                        <option selected="" value="create">
+                          Please Select
+                        </option>
+                        <option value="Male">Self</option>
+                        <option value="Female">Son</option>
+                        <option value="Daughter">Daughter</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Sister">Sister</option>
+                        <option value="Relative">Relative / Friend</option>
+                        <option value="Client">Client Marriage Bureau</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6 pl-0">
+                      <label for="gender">Select Gender <span>*</span></label>
+                      <select
+                        class="dropselect"
+                        name="gender"
+                        selected=""
+                        tabindex="1"
+                      >
+                        <option value="select" selected="">
+                          Please Select
+                        </option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group" style="display: none">
+                    <div class="gender-box">
+                      <div class="radio-button">
+                        <input id="female" name="radio" type="radio" />
+                        <label for="female" class="radio-label">Female</label>
+                      </div>
+                      <div class="radio-button">
+                        <input id="male" name="radio" type="radio" />
+                        <label for="male" class="radio-label">Male</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Name <span>*</span></label>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          placeholder="First Name"
+                          class="form-control"
+                          id="fname"
+                        />
+                      </div>
+                      <div class="col-lg-6 pl-0">
+                        <input
+                          type="text"
+                          placeholder="Last Name"
+                          class="form-control"
+                          id="lname"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-lg-6">
+                      <label for="email">Email Address <span>*</span></label>
+                      <input
+                        type="email"
+                        placeholder="Enter Email Address"
+                        class="form-control"
+                        id="email"
+                      />
+                    </div>
+                    <div class="col-lg-6 pl-0">
+                      <label for="email"> Mobile No. <span>*</span></label>
+                      <input
+                        type="email"
+                        placeholder="Enter Mobile No."
+                        class="form-control"
+                        id="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Create New Password <span>*</span></label>
+                    <input
+                      type="password"
+                      placeholder="Enter Password"
+                      class="form-control"
+                      id="password"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="form-login"></div>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-orange rounded btn-block"
+                    >
+                      Register NOW
+                    </button>
+                  </div>
+                  <div class="form-group register-here">
+                    <h4>
+                      Already a member? Please
+                      <a
+                        data-toggle="modal"
+                        data-target="#login-modal"
+                        data-dismiss="modal"
+                        >Click Here
+                      </a>
+                    </h4>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.multiselect.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
