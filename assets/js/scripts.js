@@ -34,6 +34,43 @@ function active_course() {
 }
 active_course();
 
+
+function profiles() {
+  if ($(".profiles").length) {
+    $(".profiles").owlCarousel({
+      loop: true,
+      margin: 20,
+      items: 4,
+      nav: true,
+      autoplay: 5000,
+      smartSpeed: 2000,
+      dots: true,
+      responsiveClass: true,
+      thumbs: true,
+      thumbsPrerendered: true,
+      navText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>",
+      ],
+      responsive: {
+        0: {
+          items: 1,
+          margin: 0,
+        },
+        768: {
+          items: 3,
+          margin: 30,
+        },
+        1200: {
+          items: 4,
+          margin: 30,
+        },
+      },
+    });
+  }
+}
+profiles();
+
 $(window).scroll(function () {
   var sticky = $("header"),
     scroll = $(window).scrollTop();

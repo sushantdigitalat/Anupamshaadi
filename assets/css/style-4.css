@@ -1411,12 +1411,15 @@ h2.heading {
   transform: rotate(45deg);
 }
 
+.gray-bg{
+  background-color: #f8f8f8;
+}
+
 .about-us,
 .team,
 .other-services,
 .faq-section {
   position: relative;
-  background-color: #f8f8f8;
   overflow: hidden;
 }
 .trusted-box {
